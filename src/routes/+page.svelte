@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
+
 	let blurModifier = $state(0);
 	let saturateModifier = $state(0);
 	let hueModifier = $state(0);
@@ -30,17 +32,19 @@
 	</filter>
 </svg>
 
-<h1 class="text-center text-4xl font-bold">hi how are you</h1>
+<h1 class="text-p text-center text-4xl font-bold">{$_('test.hello')}</h1>
 <img
 	src="https://images.pexels.com/photos/4058530/pexels-photo-4058530.jpeg"
 	alt="logo"
 	class="h-2xl w-2xl"
 />
 
-<div class="bg-blur bg-yellow-blur"></div>
-<div class="bg-blur bg-green-blur"></div>
+<div class="back-blur bg-yellow-2"></div>
+
+<!-- <div class="bg-blur bg-green-blur"></div> -->
 
 <style>
+	@import '../app.css';
 	:root {
 		--white-0: #ffffffe3;
 		--white-1: #f2f2f2e3;
@@ -85,18 +89,18 @@
 		}
 	}
 
-	.bg-blur {
+	.back-blur {
 		position: fixed;
 		pointer-events: none;
 		filter: blur(65px);
 		opacity: 0.9;
 		z-index: -1;
-	}
-
-	.bg-yellow-blur {
 		height: 600px;
 		width: 1000px;
 		inset: -20% -25%;
+	}
+
+	.bg-yellow-blur {
 		background: radial-gradient(circle, #ffe7c5 30%, transparent 80%);
 	}
 

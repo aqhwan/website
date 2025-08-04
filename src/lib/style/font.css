@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Caveat';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/Caveat/woff/Caveat-VariableFont_wght.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Rampart One';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/Rampart_One/woff/RampartOne-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Shadows Into Light';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/Shadows_Into_Light/woff/ShadowsIntoLight-Regular.woff') format('woff');
+}
+
+@theme {
+	--font-main: 'Caveat', monospace;
+	--font-sub: 'Shadows Into Light', sans-serif;
+	--font-highlight: 'Rampart One', sans-serif;
+}
