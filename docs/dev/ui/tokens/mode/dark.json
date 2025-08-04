@@ -1,0 +1,57 @@
+{
+  "light": {
+    "$value": "{black}",
+    "$type": "color",
+    "$description": ""
+  },
+  "primry": {
+    "$value": "{green}",
+    "$type": "color",
+    "$description": ""
+  },
+  "sub_text": {
+    "$value": "{yellow}",
+    "$type": "color",
+    "$description": ""
+  },
+  "scandray": {
+    "$value": "{dark_yellow}",
+    "$type": "color",
+    "$description": ""
+  },
+  "text": {
+    "$value": "{yellow}",
+    "$type": "color",
+    "$description": ""
+  },
+  "light_mode_stuff": {
+    "$value": "0",
+    "$type": "opacity",
+    "$description": ""
+  },
+  "light_scandray": {
+    "$value": "{dark_yellow}",
+    "$type": "color",
+    "$description": ""
+  },
+  "dark_mode_stuff": {
+    "$value": "1",
+    "$type": "opacity",
+    "$description": ""
+  },
+  "secandry_bg": {
+    "$value": "{dark_grey}",
+    "$type": "color",
+    "$description": ""
+  },
+  "bg": {
+    "$value": "{black}",
+    "$type": "color",
+    "$description": ""
+  },
+  "dark_primry": {
+    "$value": "{realy_dark_green}",
+    "$type": "color",
+    "$description": ""
+  }
+}

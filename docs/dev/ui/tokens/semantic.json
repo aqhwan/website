@@ -1,0 +1,107 @@
+{
+  "p_sw": {
+    "$value": "{sm}",
+    "$type": "strokeWidth",
+    "$description": ""
+  },
+  "sac_bg": {
+    "$value": "{secandry_bg}",
+    "$type": "color",
+    "$description": ""
+  },
+  "s_gap": {
+    "$value": "({sm}*10)",
+    "$type": "spacing",
+    "$description": ""
+  },
+  "glass": {
+    "$value": "({big}/10)^{light_mode_stuff}",
+    "$type": "opacity",
+    "$description": ""
+  },
+  "border": {
+    "$value": "{grey}",
+    "$type": "color",
+    "$description": ""
+  },
+  "dark_prim": {
+    "$value": "{dark_primry}",
+    "$type": "color",
+    "$description": ""
+  },
+  "light_mode": {
+    "$value": "{light_mode_stuff}",
+    "$type": "opacity",
+    "$description": ""
+  },
+  "sub_font": {
+    "$value": "{sub_text}",
+    "$type": "color",
+    "$description": ""
+  },
+  "first_blur": {
+    "$value": "{scandray}",
+    "$type": "color",
+    "$description": ""
+  },
+  "font": {
+    "$value": "{text}",
+    "$type": "color",
+    "$description": ""
+  },
+  "sub_note_left": {
+    "$value": "-(({mid}*10)+5)",
+    "$type": "rotation",
+    "$description": ""
+  },
+  "big": {
+    "$value": "8",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "overlay_blur": {
+    "$value": "{grey}e9",
+    "$type": "color",
+    "$description": ""
+  },
+  "p_bor": {
+    "$value": "{big}*10",
+    "$type": "borderRadius",
+    "$description": ""
+  },
+  "glass_color": {
+    "$value": "{light}",
+    "$type": "color",
+    "$description": ""
+  },
+  "mid": {
+    "$value": "4",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "blur": {
+    "$value": "0.8",
+    "$type": "opacity",
+    "$description": ""
+  },
+  "light_font": {
+    "$value": "{scandray}",
+    "$type": "color",
+    "$description": ""
+  },
+  "sm": {
+    "$value": "2",
+    "$type": "dimension",
+    "$description": ""
+  },
+  "sub_notes": {
+    "$value": "({mid}*10)+5",
+    "$type": "rotation",
+    "$description": ""
+  },
+  "prim_gb": {
+    "$value": "{bg}",
+    "$type": "color",
+    "$description": ""
+  }
+}

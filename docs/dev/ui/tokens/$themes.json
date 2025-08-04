@@ -1,0 +1,28 @@
+[
+  {
+    "id": "3a6016de-dd8a-803b-8006-9336d44006f4",
+    "name": "light",
+    "group": "",
+    "description": "",
+    "is-source": false,
+    "modified-at": "2025-07-31T10:23:24.645+01:00",
+    "selectedTokenSets": {
+      "semantic": "enabled",
+      "mode/light": "enabled",
+      "global": "enabled"
+    }
+  },
+  {
+    "id": "3a6016de-dd8a-803b-8006-9336ea7f75b5",
+    "name": "dark",
+    "group": "",
+    "description": "",
+    "is-source": false,
+    "modified-at": "2025-07-31T10:23:40.278+01:00",
+    "selectedTokenSets": {
+      "semantic": "enabled",
+      "mode/dark": "enabled",
+      "global": "enabled"
+    }
+  }
+]

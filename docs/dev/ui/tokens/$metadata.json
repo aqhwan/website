@@ -1,0 +1,16 @@
+{
+  "tokenSetOrder": [
+    "global",
+    "mode/dark",
+    "mode/light",
+    "semantic"
+  ],
+  "activeThemes": [
+    "/light"
+  ],
+  "activeSets": [
+    "semantic",
+    "mode/light",
+    "global"
+  ]
+}
