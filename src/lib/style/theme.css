@@ -5,7 +5,40 @@
 	--color-green-3: #9fa58b;
 	--color-yellow-1: #fff7eb;
 	--color-yellow-2: #ffe7c5;
-	--color-gray-1: #333333;
-	--color-gray-2: #222222;
-	--color-gray-3: #020202;
+	--color-gray-1: #333333; /* light mode */
+	--color-gray-2: #222222; /* dark mode */
+	--color-black-1: #020202; /* light mode */
+	--color-black-2: #1b1b1b; /* dark mode */
+	--color-helper-green: var(--color-green-1);
+	--color-helper-yellow: var(--color-yellow-1);
+	--color-helper-purple: #e1e1fe;
+}
+
+.color-font {
+	@apply text-gray-1 dark:text-yellow-1;
+}
+
+.color-light-font {
+	@apply text-yellow-1;
+}
+
+.color-bg {
+	@apply bg-white-1 dark:bg-black-1;
+}
+
+.color-highlight-bg {
+	@apply bg-yellow-1 dark:bg-gray-2;
+}
+
+.color-primary {
+	@apply text-green-2 dark:text-green-3;
+}
+
+@utility color-blur-* {
+	background: radial-gradient(circle, var(--color-helper-*) 0%, transparent 100%);
+	@apply opacity-70 blur-3xl;
+}
+
+@utility pallet-* {
+	color: var(--color-*);
 }

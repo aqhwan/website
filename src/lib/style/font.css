@@ -26,4 +26,41 @@
 	--font-main: 'Caveat', monospace;
 	--font-sub: 'Shadows Into Light', sans-serif;
 	--font-highlight: 'Rampart One', sans-serif;
+
+	--size-desktop-font-xl: 12.5rem;
+	--size-desktop-font-l: 6.875rem;
+	--size-desktop-font-m: 3rem;
+	--size-desktop-font-s: 1.125rem;
+
+	--size-mobile-font-xl: 4.5rem;
+	--size-mobile-font-l: 3rem;
+	--size-mobile-font-m: 2.25rem;
+	--size-mobile-font-s: 0.75rem;
+}
+
+@utility main-font-* {
+	font-size: --value(--size-desktop-font-*);
+	@apply font-main;
+
+	@media (width <= 40rem) {
+		font-size: --value(--size-mobile-font- *);
+	}
+}
+
+@utility sub-font-* {
+	font-size: --value(--size-desktop-font-*);
+	@apply font-sub;
+
+	@media (width <= 40rem) {
+		font-size: --value(--size-mobile-font- *);
+	}
+}
+
+@utility highlight-font-* {
+	font-size: --value(--size-desktop-font-*);
+	@apply font-highlight;
+
+	@media (width <= 40rem) {
+		font-size: --value(--size-mobile-font- *);
+	}
 }
