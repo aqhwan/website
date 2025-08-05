@@ -49,7 +49,7 @@
 
 @utility sub-font-* {
 	font-size: --value(--size-desktop-font-*);
-	@apply font-sub;
+	@apply font-sub capitalize;
 
 	@media (width <= 40rem) {
 		font-size: --value(--size-mobile-font- *);
@@ -58,7 +58,7 @@
 
 @utility highlight-font-* {
 	font-size: --value(--size-desktop-font-*);
-	@apply font-highlight;
+	@apply font-highlight uppercase;
 
 	@media (width <= 40rem) {
 		font-size: --value(--size-mobile-font- *);
