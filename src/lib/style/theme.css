@@ -14,31 +14,27 @@
 	--color-helper-purple: #e1e1fe;
 }
 
-.color-font {
+.pallet-font {
 	@apply text-gray-1 dark:text-yellow-1;
 }
 
-.color-light-font {
+.pallet-light-font {
 	@apply text-yellow-1;
 }
 
-.color-bg {
+.pallet-bg {
 	@apply bg-white-1 dark:bg-black-1;
 }
 
-.color-highlight-bg {
+.pallet-highlight-bg {
 	@apply bg-yellow-1 dark:bg-gray-2;
 }
 
-.color-primary {
+.pallet-primary {
 	@apply text-green-2 dark:text-green-3;
 }
 
-@utility color-blur-* {
+@utility pallet-blur-* {
 	background: radial-gradient(circle, var(--color-helper-*) 0%, transparent 100%);
 	@apply opacity-70 blur-3xl;
-}
-
-@utility pallet-* {
-	color: var(--color-*);
 }

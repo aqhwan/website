@@ -33,6 +33,17 @@
 	</filter>
 </svg>
 
+<h1 class="main-font-s">{$_('test.hello')}</h1>
+<img
+	src="https://images.pexels.com/photos/4058530/pexels-photo-4058530.jpeg"
+	alt="logo"
+	class="h-2xl w-2xl"
+/>
+
+<div class="back-blur bg-yellow-2"></div>
+
+<!-- <div class="bg-blur bg-green-blur"></div> -->
+
 <style>
 	@import '../app.css';
 	:root {
