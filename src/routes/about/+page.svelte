@@ -14,7 +14,7 @@
     <section class="flex flex-col gap-4 ">
         <div>
         {#each content as item}
-            <p class="gap-4 p-8"><strong class="inline">{$_(`${item}.title`)}</strong>{$_(`${item}.description`)}</p>
+            <p class="gap-4 p-8" ><strong class="inline">{$_(`${item}.title`)}</strong>{$_(`${item}.description`)}</p>
         {/each}
         </div>
     </section>
