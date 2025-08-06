@@ -1,7 +1,32 @@
 @import 'tailwindcss';
 @import './lib/style/theme.css';
 @import './lib/style/font.css';
+@import './lib/style/spacing.css';
 
 body {
-	/* @apply pallet-bg; */
+	@apply pallet-bg main-font-m pallet-font mx-auto h-screen w-(--port-view-width) overflow-x-hidden overflow-y-scroll;
+}
+
+h1 {
+	@apply main-font-xl;
+}
+
+h2 {
+	@apply main-font-l;
+}
+
+mark {
+	@apply highlight-font-l bg-none;
+}
+
+strong {
+	@apply sub-font-l;
+}
+
+sub {
+	@apply sub-font-m;
+}
+
+small {
+	@apply sub-font-s;
 }

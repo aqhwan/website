@@ -1,23 +1,25 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 
-	let blurModifier = $state(0);
-	let saturateModifier = $state(0);
-	let hueModifier = $state(0);
+	let filters = $state('');
+	let random = $state({ blur: 0, saturate: 0, hue: 0 });
 
 	const handleScroll = () => {
-		blurModifier = Math.random() % 2;
-		saturateModifier = Math.random() % 2;
-		hueModifier = Math.random() % 2;
+		random.blur = Math.random() % 2;
+		random.saturate = Math.random() % 2;
+		random.hue = Math.random() % 2;
+
+		filters = `blur(${10 + random.blur * 5}px) saturate(${140 + random.saturate * 80}%) hue-rotate(${random.hue * 5}deg)`;
 	};
 </script>
 
 <svelte:document onscroll={handleScroll} />
 
-<div
-	style:backdrop-filter={`blur(${10 + blurModifier * 5}px) saturate(${140 + saturateModifier * 80}%) hue-rotate(${hueModifier * 5}deg)`}
-	class="card"
-></div>
+<nav
+	style:backdrop-filter={filters}
+	style:-webkit-backdrop-filter={filters}
+	class="sticky inset-0 mt-4 h-30 w-full rounded-[3.4rem] bg-radial-[at_150%_400%] from-white to-transparent transition-all duration-150 ease-in-out before:absolute before:inset-0 before:z-0 before:rounded-[inherit]"
+></nav>
 
 <svg style="display:none;">
 	<filter id="displacementFilter">
@@ -35,47 +37,14 @@
 
 <style>
 	@import '../app.css';
-	:root {
-		--white-0: #ffffffe3;
-		--white-1: #f2f2f2e3;
-		--white-2: #c6c6c6e7;
-		--gray-1: #a9a9a9;
-		--gray-2: #777777;
-		--gray-3: #333333;
-		--opacity-1: 0.6;
-		--blur-1: 5px;
-	}
-	.card {
-		position: sticky;
-		top: 10%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		transition: all 0.5s ease-in-out;
-		width: 80vw;
-		height: 130px;
-		border-radius: 60px;
-		background: radial-gradient(circle at 150% 400%, var(--white-1) 0%, transparent 100%);
-		backdrop-filter: blur(var(--blur-1)) saturate(180%);
-		-webkit-backdrop-filter: blur(var(--blur-1)) saturate(180%) hue-rotate(5deg);
-		box-sizing: border-box;
-
-		&::before {
-			content: '';
-			position: absolute;
-			inset: 0;
-			z-index: 0;
-			overflow: hidden;
-			border-radius: inherit;
-			-webkit-box-shadow:
-				inset 2px 2px 0px -2px var(--white-0),
-				inset 0 0 3px 1px var(--white-0);
-			box-shadow:
-				inset 6px 6px 0px -6px var(--white-0),
-				inset 0 0 8px 1px var(--white-0);
-
-			filter: fade(red, 40%);
-
-			backdrop-filter: brightness(1.1) blur(2px) url(#displacementFilter);
-		}
+	nav::before {
+		content: '';
+		-webkit-box-shadow:
+			inset 2px 2px 0px -2px var(--color-white-1),
+			inset 0 0 3px 1px var(--color-white-2);
+		box-shadow:
+			inset 6px 6px 0px -6px var(--color-white-1),
+			inset 0 0 8px 1px var(--color-white-2);
+		backdrop-filter: brightness(1.1) blur(2px) url(#displacementFilter);
 	}
 </style>

@@ -1,5 +1,6 @@
 @theme {
 	--color-white-1: #f2f2f2;
+	--color-white-2: #ffffff;
 	--color-green-1: #e1e6b7;
 	--color-green-2: #cdd6b0;
 	--color-green-3: #9fa58b;
@@ -14,23 +15,23 @@
 	--color-helper-purple: #e1e1fe;
 }
 
-.pallet-font {
+@utility pallet-font {
 	@apply text-gray-1 dark:text-yellow-1;
 }
 
-.pallet-light-font {
+@utility pallet-light-font {
 	@apply text-yellow-1;
 }
 
-.pallet-bg {
+@utility pallet-bg {
 	@apply bg-white-1 dark:bg-black-1;
 }
 
-.pallet-highlight-bg {
+@utility pallet-highlight-bg {
 	@apply bg-yellow-1 dark:bg-gray-2;
 }
 
-.pallet-primary {
+@utility pallet-primary {
 	@apply text-green-2 dark:text-green-3;
 }
 
