@@ -1,5 +1,7 @@
 <script lang="ts">
+	import LocalAndThemeSwitchers from '$lib/components/LocalAndThemeSwitchers.svelte';
 	import { _ } from 'svelte-i18n';
+	import NavMenu from './NavMenu.svelte';
 
 	let filters = $state('');
 	let random = $state({ blur: 0, saturate: 0, hue: 0 });
@@ -11,6 +13,8 @@
 
 		filters = `blur(${10 + random.blur * 5}px) saturate(${140 + random.saturate * 80}%) hue-rotate(${random.hue * 5}deg)`;
 	};
+
+	let navMenu = ['products', 'about'];
 </script>
 
 <svelte:document onscroll={handleScroll} />
@@ -18,8 +22,23 @@
 <nav
 	style:backdrop-filter={filters}
 	style:-webkit-backdrop-filter={filters}
-	class="sticky inset-0 mt-4 h-30 w-full rounded-[3.4rem] bg-radial-[at_150%_400%] from-white to-transparent transition-all duration-150 ease-in-out before:absolute before:inset-0 before:z-0 before:rounded-[inherit]"
-></nav>
+	class="sticky inset-0 top-5 mx-auto h-30 w-full overflow-hidden rounded-[3.4rem] bg-radial-[at_150%_400%] from-white to-transparent transition-all duration-150 ease-in-out not-sm:h-20 before:absolute before:inset-0 before:z-0 before:rounded-[inherit] dark:from-black"
+>
+	<div id="nav" class="flex h-full w-full items-center justify-between not-sm:px-10 sm:px-20">
+		<div id="logo" class="z-1 flex h-full w-50 items-center justify-center not-sm:hidden">
+			<a href="/">
+				<img
+					class="fill-gray-1 stroke-gray-1 dark:stroke-yellow-1 dark:fill-yellow-1"
+					src="/images/logo/bothBlackAndWhite.svg"
+					alt="logo"
+				/>
+			</a>
+		</div>
+		<LocalAndThemeSwitchers style="sm:hidden" />
+
+		<NavMenu />
+	</div>
+</nav>
 
 <svg style="display:none;">
 	<filter id="displacementFilter">
@@ -36,7 +55,6 @@
 </svg>
 
 <style>
-	@import '../app.css';
 	nav::before {
 		content: '';
 		-webkit-box-shadow:

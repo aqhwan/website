@@ -5,8 +5,8 @@
 - [x] make it responsive
 
 - [ ] home
-  - [ ] navbar
-  - [ ] hero
+  - [x] navbar
+  - [x] hero
   - [ ] features
   - [ ] footer
 - [ ] about

@@ -2,8 +2,8 @@
 	--color-white-1: #f2f2f2;
 	--color-white-2: #ffffff;
 	--color-green-1: #e1e6b7;
-	--color-green-2: #cdd6b0;
-	--color-green-3: #9fa58b;
+	--color-green-2: #cdd6b0; /* light mode */
+	--color-green-3: #9fa58b; /* dark mode */
 	--color-yellow-1: #fff7eb;
 	--color-yellow-2: #ffe7c5;
 	--color-gray-1: #333333; /* light mode */
@@ -27,11 +27,15 @@
 	@apply bg-white-1 dark:bg-black-1;
 }
 
+@utility pallet-dark-bg {
+	@apply bg-gray-1 dark:bg-gray-2;
+}
+
 @utility pallet-highlight-bg {
 	@apply bg-yellow-1 dark:bg-gray-2;
 }
 
-@utility pallet-primary {
+@utility pallet-colored-font {
 	@apply text-green-2 dark:text-green-3;
 }
 

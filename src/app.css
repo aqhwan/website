@@ -2,31 +2,32 @@
 @import './lib/style/theme.css';
 @import './lib/style/font.css';
 @import './lib/style/spacing.css';
+@import './lib/animation/animation.css';
 
 body {
-	@apply pallet-bg main-font-m pallet-font mx-auto h-screen w-(--port-view-width) overflow-x-hidden overflow-y-scroll;
+	@apply pallet-bg main-font-m pallet-font relative w-screen overflow-x-hidden;
 }
 
 h1 {
-	@apply main-font-xl;
+	@apply main-font-xl inline-block;
 }
 
 h2 {
-	@apply main-font-l;
+	@apply main-font-l inline-block;
 }
 
 mark {
-	@apply highlight-font-l bg-none;
+	@apply highlight-font-l pallet-font inline-block bg-transparent;
 }
 
 strong {
-	@apply sub-font-l;
+	@apply sub-font-l inline-block;
 }
 
 sub {
-	@apply sub-font-m;
+	@apply sub-font-m inline-block;
 }
 
 small {
-	@apply sub-font-s;
+	@apply sub-font-s inline-block;
 }
