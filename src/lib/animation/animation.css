@@ -1,0 +1,45 @@
+@theme {
+	--animate-up-down-1: up-down 10sec ease-in-out infinite;
+	--animate-up-down-2: up-down 20sec ease-in-out infinite;
+
+	--animate-down-up-1: down-up 10sec ease-in-out infinite;
+	--animate-down-up-2: down-up 20sec ease-in-out infinite;
+
+	--animate-fast-down-up-1: down-up-fast 1sec ease-in-out infinite;
+
+	@keyframes up-down {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(10%);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes down-up {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-10%);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes down-up {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(50px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+}
