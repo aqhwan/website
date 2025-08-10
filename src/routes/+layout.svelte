@@ -15,8 +15,6 @@
   import '../app.css'
 
   import Nav from './Nav.svelte'
-  import BgBlur from '$lib/components/BgBlur.svelte'
-  import { blurs } from '$lib/states/bgBlur.svelte'
   import Footer from './Footer.svelte'
 
   let {
@@ -25,25 +23,12 @@
     $props()
 </script>
 
-<section
-  class="relative h-screen w-full overflow-x-hidden"
+<main
+  class="mx-auto w-(--port-view-width)"
 >
-  {#each $blurs as { position, size, color, animation }}
-    <BgBlur
-      {position}
-      {size}
-      {color}
-      {animation}
-    />
-  {/each}
-
-  <main
-    class="relative mx-auto w-(--port-view-width)"
-  >
-    <Nav
-    />
-    {@render children()}
-    <Footer
-    />
-  </main>
-</section>
+  <Nav
+  />
+  {@render children()}
+  <Footer
+  />
+</main>

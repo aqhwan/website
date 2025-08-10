@@ -3,27 +3,10 @@
 >
   import Hero from './Hero.svelte'
 
-  import {
-    fade,
-    fly,
-  } from 'svelte/transition'
-
-  let visible =
-    $state(
-      false,
-    )
-
-  const onSomeThingHappened =
-    (
-      someEvent: any,
-      ...args: any
-    ) => {
-      visible =
-        !visible
-    }
+  import type { Attachment } from 'svelte/attachments'
+  import Features from './Features.svelte'
 
   import { blurs } from '$lib/states/bgBlur.svelte'
-  import type { Attachment } from 'svelte/attachments'
 
   const chnageBgBlur: Attachment =
     () => {
@@ -35,6 +18,7 @@
                 top: -10,
                 left: -20,
               },
+            time: 20,
             size: {
               height: 40,
               width: 40,
@@ -50,6 +34,7 @@
                 top: 40,
                 left: 70,
               },
+            time: 60,
             size: {
               height: 40,
               width: 40,
@@ -65,6 +50,7 @@
                 top: 90,
                 left: -20,
               },
+            time: 20,
             size: {
               height: 40,
               width: 40,
@@ -78,7 +64,7 @@
 
       return () => {
         $blurs =
-          []
+          {}
       }
     }
 </script>
@@ -90,19 +76,5 @@
 </span>
 <Hero
 />
-
-<span
-  class="block h-screen w-full bg-pink-300"
-  {onSomeThingHappened}
->
-  {#if visible}
-    <h1
-      in:fly={{
-        y: 200,
-      }}
-      out:fade
-    >
-      hi
-    </h1>
-  {/if}
-</span>
+<Features
+/>
