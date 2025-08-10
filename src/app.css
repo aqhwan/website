@@ -5,7 +5,7 @@
 @import './lib/animation/animation.css';
 
 body {
-  @apply pallet-bg main-font-m pallet-font relative w-screen overflow-x-hidden;
+  @apply pallet-bg main-font-m pallet-font w-screen;
 }
 
 h1 {

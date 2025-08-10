@@ -20,6 +20,9 @@
       "note": {
         "scroll_down": "there is some thign down"
       }
+    },
+    "features": {
+      "title": "why?"
     }
   }
 }

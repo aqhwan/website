@@ -42,7 +42,6 @@
   },
   "dependencies": {
     "motion": "^12.23.12",
-    "svelte-i18n": "^4.0.1",
-    "svelte-inview": "^4.0.4"
+    "svelte-i18n": "^4.0.1"
   }
 }

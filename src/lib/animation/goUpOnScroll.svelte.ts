@@ -25,7 +25,7 @@ const goUpOnScroll: Action =
     )
 
     return {
-      destroy() { },
+      destroy() {},
     }
   }
 

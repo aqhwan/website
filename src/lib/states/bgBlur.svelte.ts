@@ -9,6 +9,7 @@ export let blurs: Writable<
       top: number
       left: number
     }
+    time: number
     size: {
       height: number
       width: number
@@ -20,21 +21,5 @@ export let blurs: Writable<
   }[]
 > =
   writable(
-    [
-      {
-        position:
-          {
-            top: 0,
-            left: 0,
-          },
-        size: {
-          height: 40,
-          width: 40,
-        },
-        color:
-          '--color-helper-yellow',
-        animation:
-          'animate-up-down-2',
-      },
-    ],
+    [],
   )

@@ -17,7 +17,10 @@
       width: number
     }
     color: string
-    animation: string
+    animation:
+      | string
+      | undefined
+      | null
     time: number
   } = $props()
 
