@@ -8,7 +8,7 @@ declare global {
     // interface PageState {}
     // interface Platform {}
   }
-  function todo(): void;
+  function todo(): void
 }
 
-export { };
+export {}

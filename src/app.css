@@ -5,29 +5,29 @@
 @import './lib/animation/animation.css';
 
 body {
-	@apply pallet-bg main-font-m pallet-font relative w-screen overflow-x-hidden;
+  @apply pallet-bg main-font-m pallet-font relative w-screen overflow-x-hidden;
 }
 
 h1 {
-	@apply main-font-xl inline-block;
+  @apply main-font-xl inline-block;
 }
 
 h2 {
-	@apply main-font-l inline-block;
+  @apply main-font-l inline-block;
 }
 
 mark {
-	@apply highlight-font-l pallet-font inline-block bg-transparent;
+  @apply highlight-font-l pallet-font inline-block bg-transparent;
 }
 
 strong {
-	@apply sub-font-l inline-block;
+  @apply sub-font-l inline-block;
 }
 
 sub {
-	@apply sub-font-m inline-block;
+  @apply sub-font-m inline-block;
 }
 
 small {
-	@apply sub-font-s inline-block;
+  @apply sub-font-s inline-block;
 }

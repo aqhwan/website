@@ -1,66 +1,96 @@
 @font-face {
-	font-family: 'Caveat';
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url('/fonts/Caveat/woff/Caveat-VariableFont_wght.woff') format('woff');
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 100
+    900;
+  font-display: swap;
+  src: url('/fonts/Caveat/woff/Caveat-VariableFont_wght.woff')
+    format(
+      'woff'
+    );
 }
 
 @font-face {
-	font-family: 'Rampart One';
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url('/fonts/Rampart_One/woff/RampartOne-Regular.woff') format('woff');
+  font-family: 'Rampart One';
+  font-style: normal;
+  font-weight: 100
+    900;
+  font-display: swap;
+  src: url('/fonts/Rampart_One/woff/RampartOne-Regular.woff')
+    format(
+      'woff'
+    );
 }
 
 @font-face {
-	font-family: 'Shadows Into Light';
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url('/fonts/Shadows_Into_Light/woff/ShadowsIntoLight-Regular.woff') format('woff');
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 100
+    900;
+  font-display: swap;
+  src: url('/fonts/Shadows_Into_Light/woff/ShadowsIntoLight-Regular.woff')
+    format(
+      'woff'
+    );
 }
 
 @theme {
-	--font-main: 'Caveat', monospace;
-	--font-sub: 'Shadows Into Light', sans-serif;
-	--font-highlight: 'Rampart One', sans-serif;
+  --font-main:
+    'Caveat',
+    monospace;
+  --font-sub:
+    'Shadows Into Light',
+    sans-serif;
+  --font-highlight:
+    'Rampart One',
+    sans-serif;
 
-	--size-desktop-font-xl: 12.5rem;
-	--size-desktop-font-l: 4.475rem;
-	--size-desktop-font-m: 2rem;
-	--size-desktop-font-s: 1.125rem;
+  --size-desktop-font-xl: 12.5rem;
+  --size-desktop-font-l: 4.475rem;
+  --size-desktop-font-m: 2rem;
+  --size-desktop-font-s: 1.125rem;
 
-	--size-mobile-font-xl: 4.5rem;
-	--size-mobile-font-l: 2rem;
-	--size-mobile-font-m: 1.5;
-	--size-mobile-font-s: 0.75rem;
+  --size-mobile-font-xl: 4.5rem;
+  --size-mobile-font-l: 2rem;
+  --size-mobile-font-m: 1.5;
+  --size-mobile-font-s: 0.75rem;
 }
 
 @utility main-font-* {
-	font-size: --value(--size-desktop-font-*);
-	@apply font-main;
+  font-size: --value(
+    --size-desktop-font-*
+  );
+  @apply font-main;
 
-	@media (width <= 40rem) {
-		font-size: --value(--size-mobile-font- *);
-	}
+  @media (width <= 40rem) {
+    font-size: --value(
+      --size-mobile-font- *
+    );
+  }
 }
 
 @utility sub-font-* {
-	font-size: --value(--size-desktop-font-*);
-	@apply font-sub capitalize;
+  font-size: --value(
+    --size-desktop-font-*
+  );
+  @apply font-sub capitalize;
 
-	@media (width <= 40rem) {
-		font-size: --value(--size-mobile-font- *);
-	}
+  @media (width <= 40rem) {
+    font-size: --value(
+      --size-mobile-font- *
+    );
+  }
 }
 
 @utility highlight-font-* {
-	font-size: --value(--size-desktop-font-*);
-	@apply font-highlight uppercase;
+  font-size: --value(
+    --size-desktop-font-*
+  );
+  @apply font-highlight uppercase;
 
-	@media (width <= 40rem) {
-		font-size: --value(--size-mobile-font- *);
-	}
+  @media (width <= 40rem) {
+    font-size: --value(
+      --size-mobile-font- *
+    );
+  }
 }

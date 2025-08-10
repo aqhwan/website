@@ -1,45 +1,57 @@
 @theme {
-	--color-white-1: #f2f2f2;
-	--color-white-2: #ffffff;
-	--color-green-1: #e1e6b7;
-	--color-green-2: #cdd6b0; /* light mode */
-	--color-green-3: #9fa58b; /* dark mode */
-	--color-yellow-1: #fff7eb;
-	--color-yellow-2: #ffe7c5;
-	--color-gray-1: #333333; /* light mode */
-	--color-gray-2: #222222; /* dark mode */
-	--color-black-1: #020202; /* light mode */
-	--color-black-2: #1b1b1b; /* dark mode */
-	--color-helper-green: var(--color-green-1);
-	--color-helper-yellow: var(--color-yellow-1);
-	--color-helper-purple: #e1e1fe;
+  --color-white-1: #f2f2f2;
+  --color-white-2: #ffffff;
+  --color-green-1: #e1e6b7;
+  --color-green-2: #cdd6b0; /* light mode */
+  --color-green-3: #9fa58b; /* dark mode */
+  --color-yellow-1: #fff7eb;
+  --color-yellow-2: #ffe7c5;
+  --color-gray-1: #333333; /* light mode */
+  --color-gray-2: #222222; /* dark mode */
+  --color-black-1: #020202; /* light mode */
+  --color-black-2: #1b1b1b; /* dark mode */
+  --color-helper-green: var(
+    --color-green-1
+  );
+  --color-helper-yellow: var(
+    --color-yellow-1
+  );
+  --color-helper-purple: #e1e1feff;
 }
 
 @utility pallet-font {
-	@apply text-gray-1 dark:text-yellow-1;
+  @apply text-gray-1 dark:text-yellow-1;
 }
 
 @utility pallet-light-font {
-	@apply text-yellow-1;
+  @apply text-yellow-1;
 }
 
 @utility pallet-bg {
-	@apply bg-white-1 dark:bg-black-1;
+  @apply bg-white-1 dark:bg-black-1;
 }
 
 @utility pallet-dark-bg {
-	@apply bg-gray-1 dark:bg-gray-2;
+  @apply bg-gray-1 dark:bg-yellow-1;
 }
 
 @utility pallet-highlight-bg {
-	@apply bg-yellow-1 dark:bg-gray-2;
+  @apply bg-yellow-1 dark:bg-gray-2;
 }
 
 @utility pallet-colored-font {
-	@apply text-green-2 dark:text-green-3;
+  @apply text-green-2 dark:text-green-3;
 }
 
 @utility pallet-blur-* {
-	background: radial-gradient(circle, var(--color-helper-*) 0%, transparent 100%);
-	@apply opacity-70 blur-3xl;
+  background: radial-gradient(
+    circle,
+    var(
+        --color-helper-*
+      )
+      0%,
+    transparent
+      100%
+  );
+  @apply opacity-70 blur-3xl;
 }

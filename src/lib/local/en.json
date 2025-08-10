@@ -1,17 +1,25 @@
 {
-	"test": {
-		"hello": "hi how are you"
-	},
+  "test": {
+    "hello": "hi how are you"
+  },
 
-	"home": {
-		"hero": {
-			"title": {
-				"we_do": "we make apps",
-				"highlight": "but",
-				"our_apps_are": "our apps are",
-				"features": ["private", "beautiful", "fast", "easy", "fun"]
-			},
-			"note": { "scroll_down": "there is some thign down" }
-		}
-	}
+  "home": {
+    "hero": {
+      "title": {
+        "we_do": "we make apps",
+        "highlight": "but",
+        "our_apps_are": "our apps are",
+        "features": [
+          "private",
+          "beautiful",
+          "fast",
+          "easy",
+          "fun"
+        ]
+      },
+      "note": {
+        "scroll_down": "there is some thign down"
+      }
+    }
+  }
 }
