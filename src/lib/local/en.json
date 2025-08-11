@@ -17,12 +17,31 @@
           "fun"
         ]
       },
+
       "note": {
         "scroll_down": "there is some thign down"
       }
     },
+
     "features": {
-      "title": "why?"
+      "title": "owr apps are",
+
+      "left": {
+        "title": {
+          "first_part": "we do",
+          "highlight": "not"
+        },
+
+        "features_list": [
+          "buy u the markting",
+          "buy u the markting",
+          "buy u the markting",
+          "buy u the markting",
+          "buy u the markting"
+        ],
+
+        "clean_app": "clean app"
+      }
     }
   }
 }

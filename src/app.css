@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  @apply main-font-xl inline-block;
+  @apply sub-font-xl inline-block;
 }
 
 h2 {

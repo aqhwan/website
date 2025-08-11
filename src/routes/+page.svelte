@@ -15,7 +15,7 @@
           {
             position:
               {
-                top: -10,
+                top: -5,
                 left: -20,
               },
             time: 20,
@@ -31,7 +31,7 @@
           {
             position:
               {
-                top: 40,
+                top: 15,
                 left: 70,
               },
             time: 60,
@@ -47,7 +47,23 @@
           {
             position:
               {
-                top: 90,
+                top: 50,
+                left: 60,
+              },
+            time: 60,
+            size: {
+              height: 40,
+              width: 40,
+            },
+            color:
+              '--color-helper-yellow',
+            animation:
+              'down-up',
+          },
+          {
+            position:
+              {
+                top: 70,
                 left: -20,
               },
             time: 20,
@@ -64,7 +80,7 @@
 
       return () => {
         $blurs =
-          {}
+          []
       }
     }
 </script>

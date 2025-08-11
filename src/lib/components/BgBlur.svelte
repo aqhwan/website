@@ -1,6 +1,7 @@
 <script
   lang="ts"
 >
+  // FIXME: use responsivePass function
   let {
     position,
     size,

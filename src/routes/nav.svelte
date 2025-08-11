@@ -2,8 +2,10 @@
   lang="ts"
 >
   import LocalAndThemeSwitchers from '$lib/components/LocalAndThemeSwitchers.svelte'
-  import { _ } from 'svelte-i18n'
+
   import NavMenu from './NavMenu.svelte'
+
+  import { _ } from 'svelte-i18n'
 
   let filters =
     $state(
@@ -74,6 +76,8 @@
 >
   nav::before {
     content: '';
+    pointer-events: none;
+    z-index: -1;
     -webkit-box-shadow:
       inset
         2px

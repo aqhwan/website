@@ -4,6 +4,7 @@
   import Icon from '$lib/components/Icon.svelte'
 
   let menu =
+    // FIXME: use local
     [
       'products',
       'about',
@@ -29,12 +30,15 @@
     id="mobile"
     class="sm:hidden"
   >
-    <Icon
-      icon={'menu.svg'}
-      size={{
-        h: 3,
-        w: 3,
-      }}
-    />
+    <button
+    >
+      <Icon
+        icon={'menu.svg'}
+        size={{
+          h: 3,
+          w: 3,
+        }}
+      />
+    </button>
   </div>
 </div>

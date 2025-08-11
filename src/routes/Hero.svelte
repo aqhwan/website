@@ -5,55 +5,7 @@
   import WordRotate from '$lib/components/WordRotate.svelte'
 
   import { _ } from 'svelte-i18n'
-
-  import BgBlur from '$lib/components/BgBlur.svelte'
-
-  let blurs =
-    [
-      {
-        position:
-          {
-            top: -10,
-            left: -20,
-          },
-        time: 20,
-        size: {
-          height: 40,
-          width: 40,
-        },
-        color:
-          '--color-helper-yellow',
-        animation:
-          'up-down',
-      },
-      {
-        position:
-          {
-            top: 40,
-            left: 70,
-          },
-        time: 60,
-        size: {
-          height: 40,
-          width: 40,
-        },
-        color:
-          '--color-helper-green',
-        animation:
-          'down-up',
-      },
-    ]
 </script>
-
-<div
-  class="absolute inset-0 h-[200vh] w-full overflow-hidden"
->
-  {#each blurs as blur}
-    <BgBlur
-      {...blur}
-    />
-  {/each}
-</div>
 
 <main
   id="hero"

@@ -4,13 +4,14 @@
   let {
     icon,
     size,
-    ...style
+    style,
   }: {
     icon: string
     size: {
       h: number
       w: number
     }
+    style?: string
   } =
     $props()
 </script>
