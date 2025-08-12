@@ -7,6 +7,7 @@
   import Features from './Features.svelte'
 
   import { blurs } from '$lib/states/bgBlur.svelte'
+  import Contact from './Contact.svelte'
 
   const chnageBgBlur: Attachment =
     () => {
@@ -31,7 +32,7 @@
           {
             position:
               {
-                top: 15,
+                top: 10,
                 left: 70,
               },
             time: 60,
@@ -47,7 +48,7 @@
           {
             position:
               {
-                top: 50,
+                top: 35,
                 left: 60,
               },
             time: 60,
@@ -63,7 +64,7 @@
           {
             position:
               {
-                top: 70,
+                top: 80,
                 left: -20,
               },
             time: 20,
@@ -93,4 +94,6 @@
 <Hero
 />
 <Features
+/>
+<Contact
 />

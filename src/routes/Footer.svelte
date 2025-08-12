@@ -28,7 +28,7 @@
 </script>
 
 <footer
-  class="flex h-fit w-full flex-col items-center justify-center"
+  class="relative flex h-fit w-full flex-col items-center justify-center"
 >
   <section
     id="footer-links"

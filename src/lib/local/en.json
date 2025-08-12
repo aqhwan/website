@@ -41,7 +41,33 @@
         ],
 
         "clean_app": "clean app"
+      },
+
+      "right": {
+        "features_list": [
+          {
+            "body": "this is some text that tallk about a featcher in this app makers",
+            "direction": "left",
+            "image": "/images/lock.svg"
+          },
+          {
+            "body": "this is some text that tallk about a featcher in this app makers",
+            "direction": "right",
+            "image": "/images/valueEqualMonay.svg"
+          },
+          {
+            "body": "this is some text that tallk about a featcher in this app makers",
+            "direction": "left",
+            "image": "/images/glass.svg"
+          }
+        ]
       }
+    },
+    "contact": {
+      "title": "Contact us?",
+      "email": "some@mail.thing",
+      "discord": "discord.gg/acountNoExistYet",
+      "telegram": "t.me/acountNoExistYet"
     }
   }
 }

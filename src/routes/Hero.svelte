@@ -82,6 +82,7 @@
           h: 1,
           w: 1,
         }}
+        style="animate-bounce"
       />
     </small>
   </span>

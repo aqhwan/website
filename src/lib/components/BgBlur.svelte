@@ -1,7 +1,8 @@
 <script
   lang="ts"
 >
-  // FIXME: use responsivePass function
+  import rp from '$lib/utils/responsivePass.svelte'
+
   let {
     position,
     size,
@@ -25,18 +26,6 @@
     time: number
   } = $props()
 
-  const isMobile =
-    (): boolean =>
-      windowWidth
-      < 480
-        ? true
-        : false
-
-  let windowWidth =
-    $state(
-      1000,
-    )
-
   time =
     time
     || (Math.random()
@@ -46,32 +35,10 @@
       ? 20
       : 60
 
-  size.width =
-    isMobile()
-      ? size.width
-        / 5
-      : size.width
-  size.height =
-    isMobile()
-      ? size.height
-        / 5
-      : size.height
-
-  position.left =
-    isMobile() // is it on mobile?
-      ? position.left
-        < 50 // yes?, so is it on the left side?
-        ? position.left
-          - Math.abs(
-            position.left
-              / 10,
-          ) // yes?, so push it more to left
-        : position.left
-          + Math.abs(
-            position.left
-              / 10,
-          ) // no?, so push it more to right
-      : position.left // no?, so keep it as it is
+  let windowWidth: number =
+    $state(
+      0,
+    )
 </script>
 
 <svelte:window
@@ -88,8 +55,8 @@
   ease-in-out
   infinite"
   style:background={`radial-gradient(circle, var(${color}) 0%, transparent 80%)`}
-  style:width={`${size.width}rem`}
-  style:height={`${size.height}rem`}
+  style:width={`${rp(windowWidth, size.width, size.width / 2)}rem`}
+  style:height={`${rp(windowWidth, size.height, size.height / 2)}rem`}
   style:top={`${position.top}%`}
-  style:left={`${position.left}%`}
+  style:left={`${rp(windowWidth, position.left, position.left * 0.8)}%`}
 ></div>

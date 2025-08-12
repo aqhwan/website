@@ -20,29 +20,10 @@
 
   import { blurs } from '$lib/states/bgBlur.svelte'
 
-  import type { Action } from 'svelte/action'
-
   let websiteOffset: number =
     $state(
       0,
     )
-
-  const getWebsiteHeight: Action =
-    (
-      document: HTMLElement,
-    ) => {
-      const html: HTMLElement | null =
-        document.querySelector(
-          'html',
-        )
-
-      if (
-        html
-      ) {
-        websiteOffset =
-          html.offsetHeight
-      }
-    }
 
   let {
     children,
@@ -50,8 +31,10 @@
     $props()
 </script>
 
-<svelte:document
-  use:getWebsiteHeight
+<svelte:body
+  bind:offsetHeight={
+    websiteOffset
+  }
 />
 
 <div

@@ -5,11 +5,16 @@
 
   let {
     children,
+    style,
+  }: {
+    children: any
+    style?: string
   } =
     $props()
 </script>
 
 <span
+  class={style}
 >
   <Icon
     icon="listDot.svg"

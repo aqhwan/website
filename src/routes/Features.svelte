@@ -9,6 +9,10 @@
 
   import { _ } from 'svelte-i18n'
 
+  // declare that _() can return any type (array in this case)
+  const t: any =
+    _
+
   let windowWidth: number =
     $state(
       0,
@@ -32,11 +36,11 @@
 />
 
 <section
-  class="flex h-screen w-full flex-row items-center justify-between not-md:h-fit not-md:flex-col-reverse"
+  class="flex h-[80vh] w-full flex-row items-center justify-between not-md:h-fit not-md:flex-col-reverse not-md:gap-10"
 >
   <div
     id="left"
-    class="flex h-full flex-col items-center justify-start not-md:mb-50 not-md:w-full md:w-1/2"
+    class="flex h-full flex-col justify-start not-md:mb-50 not-md:w-full not-md:items-center md:w-1/2 md:items-start"
   >
     <span
     >
@@ -65,7 +69,7 @@
     {/each}
 
     <span
-      class="relative flex h-1/3 w-full flex-col items-center justify-center"
+      class="relative flex h-1/3 flex-col items-center justify-center not-md:w-full md:w-fit"
     >
       <span
         class="relative h-15 w-full not-md:h-7"
@@ -84,7 +88,7 @@
               2,
             ),
           }}
-          style="absolute right-[30%]"
+          style="absolute right-[0%]"
         />
       </span>
       <strong
@@ -111,7 +115,7 @@
               2,
             ),
           }}
-          style="absolute left-[30%]"
+          style="absolute left-[20%]"
         />
       </span>
     </span>
@@ -119,6 +123,36 @@
 
   <div
     id="right"
-    class="flex h-full w-1/2 flex-col items-center justify-center"
-  ></div>
+    class="relative flex h-full flex-col items-center justify-center gap-5 not-md:w-full md:w-1/2"
+  >
+    <!-- @ts-ignore -->
+    {#each $t('home.features.right.features_list') as { body, direction, image }, index}
+      <div
+        class="a-feature relative flex h-1/3 w-full items-center justify-between gap-10 {direction
+        == 'right'
+          ? 'flex-row-reverse'
+          : 'flex-row'}"
+      >
+        <span
+          class="flex h-full w-2/3! flex-row items-start justify-between gap-2"
+        >
+          <mark
+            class="pallet-colored-font! -translate-y-6"
+            >{index
+              + 1}</mark
+          >
+          <span
+            class="h-full overflow-scroll"
+          >
+            {body}
+          </span>
+        </span>
+        <img
+          src={image}
+          alt=""
+          class="mx-2 w-auto max-w-1/3"
+        />
+      </div>
+    {/each}
+  </div>
 </section>
