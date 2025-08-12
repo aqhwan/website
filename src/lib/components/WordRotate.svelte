@@ -1,8 +1,7 @@
 <script
-  lang="ts"
->
-  import { onMount } from 'svelte'
-  import { fly } from 'svelte/transition'
+  lang="ts">
+  import {onMount} from 'svelte'
+  import {fly} from 'svelte/transition'
 
   let {
     words,
@@ -37,8 +36,7 @@
 </script>
 
 <span
-  class="overflow-hidden py-2"
->
+  class="overflow-hidden py-2">
   {#key index}
     <span
       in:fly={{
@@ -49,8 +47,7 @@
         y: 40,
         duration: 200,
       }}
-      class={style}
-    >
+      class={style}>
       {words[
         index
       ]}

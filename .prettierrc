@@ -1,7 +1,7 @@
 {
   "arrowParens": "avoid",
-  "bracketSameLine": false,
-  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "bracketSpacing": false,
   "experimentalOperatorPosition": "start",
   "printWidth": 0,
   "quoteProps": "as-needed",

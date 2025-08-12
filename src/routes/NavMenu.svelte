@@ -1,6 +1,5 @@
 <script
-  lang="ts"
->
+  lang="ts">
   import Icon from '$lib/components/Icon.svelte'
 
   let menu =
@@ -12,33 +11,27 @@
 </script>
 
 <div
-  id="menu-container z-1"
->
+  id="menu-container z-1">
   <div
     id="desctop"
-    class="flex h-full items-center justify-around gap-10 not-sm:hidden"
-  >
+    class="flex h-full items-center justify-around gap-10 not-sm:hidden">
     {#each menu as item}
       <a
-        href="/{item}"
-      >
+        href="/{item}">
         {item}
       </a>
     {/each}
   </div>
   <div
     id="mobile"
-    class="sm:hidden"
-  >
-    <button
-    >
+    class="sm:hidden">
+    <button>
       <Icon
         icon={'menu.svg'}
         size={{
           h: 3,
           w: 3,
-        }}
-      />
+        }} />
     </button>
   </div>
 </div>

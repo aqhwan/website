@@ -1,7 +1,6 @@
 <script
-  module
->
-  import { waitLocale } from 'svelte-i18n'
+  module>
+  import {waitLocale} from 'svelte-i18n'
   import '../i18n'
 
   export async function preload() {
@@ -10,15 +9,14 @@
 </script>
 
 <script
-  lang="ts"
->
+  lang="ts">
   import '../app.css'
 
   import Nav from './Nav.svelte'
   import Footer from './Footer.svelte'
   import BgBlur from '$lib/components/BgBlur.svelte'
 
-  import { blurs } from '$lib/states/bgBlur.svelte'
+  import {blurs} from '$lib/states/bgBlur.svelte'
 
   let websiteOffset: number =
     $state(
@@ -34,31 +32,25 @@
 <svelte:body
   bind:offsetHeight={
     websiteOffset
-  }
-/>
+  } />
 
 <div
   class="absolute inset-0 -z-1 block w-full overflow-x-hidden overflow-y-visible"
   style:height={websiteOffset
-    + 'px'}
->
+    + 'px'}>
   {#each $blurs as { position, time, size, color, animation }}
     <BgBlur
       {position}
       {time}
       {size}
       {color}
-      {animation}
-    />
+      {animation} />
   {/each}
 </div>
 
 <main
-  class="mx-auto w-(--port-view-width)"
->
-  <Nav
-  />
+  class="mx-auto w-(--port-view-width)">
+  <Nav />
   {@render children()}
-  <Footer
-  />
+  <Footer />
 </main>

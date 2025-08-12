@@ -1,6 +1,5 @@
 <script
-  lang="ts"
->
+  lang="ts">
   let {
     title,
   } =
@@ -9,11 +8,9 @@
 
 <div
   id="title-fly"
-  class="flex h-screen w-full items-center justify-center overflow-hidden"
->
+  class="flex h-screen w-full items-center justify-center overflow-hidden">
   <h1
-    class="text-center"
-  >
+    class="text-center">
     {@render title()}
   </h1>
 </div>

@@ -1,6 +1,5 @@
 <script
-  lang="ts"
->
+  lang="ts">
   let {
     icon,
     size,
@@ -22,5 +21,4 @@
   alt="logo"
   class="inline-block {style}"
   style:width={`${size.w}rem`}
-  style:height={`${size.h}rem`}
-/>
+  style:height={`${size.h}rem`} />

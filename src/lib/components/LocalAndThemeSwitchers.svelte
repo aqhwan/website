@@ -1,5 +1,5 @@
 <script
->
+  lang="ts">
   import Icon from './Icon.svelte'
 
   let {
@@ -7,39 +7,62 @@
   } =
     $props()
 
+  let body: HTMLBodyElement
+
+  let theme =
+    'light'
+
   const changeLanguage =
     () => {
       todo()
     }
   const changeTheme =
-    () => {
-      todo()
+    (
+      event: Event,
+    ) => {
+      theme =
+        theme
+        === 'light'
+          ? 'dark'
+          : 'light'
+
+      body.classList.toggle(
+        'dark',
+        theme
+          === 'dark',
+      )
+
+      body.classList.toggle(
+        'light',
+        theme
+          === 'light',
+      )
     }
 </script>
 
+<svelte:body
+  bind:this={
+    body
+  } />
+
 <span
-  class={style}
->
+  class={style}>
   <button
-    onclick={changeLanguage}
-  >
+    onclick={changeLanguage}>
     <Icon
       icon={'languages.svg'}
       size={{
         h: 1,
         w: 1,
-      }}
-    />
+      }} />
   </button>
   <button
-    onclick={changeTheme}
-  >
+    onclick={changeTheme}>
     <Icon
       icon={'moon.svg'}
       size={{
         h: 1,
         w: 1,
-      }}
-    />
+      }} />
   </button>
 </span>

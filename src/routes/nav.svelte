@@ -1,11 +1,10 @@
 <script
-  lang="ts"
->
+  lang="ts">
   import LocalAndThemeSwitchers from '$lib/components/LocalAndThemeSwitchers.svelte'
 
   import NavMenu from './NavMenu.svelte'
 
-  import { _ } from 'svelte-i18n'
+  import {_} from 'svelte-i18n'
 
   let filters =
     $state(
@@ -37,43 +36,34 @@
 </script>
 
 <svelte:document
-  onscroll={handleScroll}
-/>
+  onscroll={handleScroll} />
 
 <nav
   style:backdrop-filter={filters}
   style:-webkit-backdrop-filter={filters}
-  class="sticky inset-0 top-5 z-1 mx-auto h-30 w-full overflow-hidden rounded-[3.4rem] bg-radial-[at_150%_400%] from-white to-transparent transition-all duration-150 ease-in-out not-sm:h-20 before:pointer-events-none before:absolute before:inset-0 before:-z-1 before:rounded-[inherit] dark:from-black"
->
+  class="sticky inset-0 top-5 z-1 mx-auto h-30 w-full overflow-hidden rounded-[3.4rem] bg-radial-[at_150%_400%] from-white to-transparent transition-all duration-150 ease-in-out not-sm:h-20 before:pointer-events-none before:absolute before:inset-0 before:-z-1 before:rounded-[inherit] dark:from-black">
   <div
     id="nav"
-    class="flex h-full w-full items-center justify-between not-sm:px-10 sm:px-20"
-  >
+    class="flex h-full w-full items-center justify-between not-sm:px-10 sm:px-20">
     <div
       id="logo"
-      class="z-1 flex h-full w-50 items-center justify-center not-sm:hidden"
-    >
+      class="z-1 flex h-full w-50 items-center justify-center not-sm:hidden">
       <a
-        href="/"
-      >
+        href="/">
         <img
           class="fill-gray-1 stroke-gray-1 dark:stroke-yellow-1 dark:fill-yellow-1"
           src="/images/logo/bothBlackAndWhite.svg"
-          alt="logo"
-        />
+          alt="logo" />
       </a>
     </div>
     <LocalAndThemeSwitchers
-      style="sm:hidden"
-    />
+      style="sm:hidden" />
 
-    <NavMenu
-    />
+    <NavMenu />
   </div>
 </nav>
 
-<style
->
+<style>
   nav::before {
     content: '';
     -webkit-box-shadow:

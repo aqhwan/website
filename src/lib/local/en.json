@@ -69,5 +69,14 @@
       "discord": "discord.gg/acountNoExistYet",
       "telegram": "t.me/acountNoExistYet"
     }
+  },
+  "footer": {
+    "copyright_and_notes": {
+      "copyright": "Copyright ©2025 Aqhwan",
+      "site_notes": {
+        "note": "made and design by a aqhwan member, open source at aqhwan/website",
+        "size_source_link": "https://github.com/aqhwan/website"
+      }
+    }
   }
 }

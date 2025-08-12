@@ -4,6 +4,8 @@
 @import './lib/style/spacing.css';
 @import './lib/animation/animation.css';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body {
   @apply pallet-bg main-font-m pallet-font w-screen;
 }

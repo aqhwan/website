@@ -1,6 +1,5 @@
 <script
-  lang="ts"
->
+  lang="ts">
   import rp from '$lib/utils/responsivePass.svelte'
 
   let {
@@ -44,8 +43,7 @@
 <svelte:window
   bind:innerWidth={
     windowWidth
-  }
-/>
+  } />
 
 <div
   id="blur"
@@ -58,5 +56,5 @@
   style:width={`${rp(windowWidth, size.width, size.width / 2)}rem`}
   style:height={`${rp(windowWidth, size.height, size.height / 2)}rem`}
   style:top={`${position.top}%`}
-  style:left={`${rp(windowWidth, position.left, position.left * 0.8)}%`}
-></div>
+  style:left={`${rp(windowWidth, position.left, position.left * 0.8)}%`}>
+</div>

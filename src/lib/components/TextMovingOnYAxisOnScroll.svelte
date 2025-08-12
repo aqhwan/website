@@ -1,12 +1,11 @@
 <script
-  lang="ts"
->
+  lang="ts">
   import {
     animate,
     scroll,
   } from 'motion'
 
-  import type { Action } from 'svelte/action'
+  import type {Action} from 'svelte/action'
 
   let {
     children,
@@ -59,18 +58,14 @@
 
 <div
   id="horizontal-scroll-gallery"
-  class="relative w-full {style}"
->
+  class="relative w-full {style}">
   <div
-    class="relative! h-full"
-  >
+    class="relative! h-full">
     <div
       use:goLeftOnScroll
-      class="sticky top-1/2 h-fit overflow-hidden"
-    >
+      class="sticky top-1/2 h-fit overflow-hidden">
       <div
-        class="flex items-center gap-40 text-nowrap"
-      >
+        class="flex items-center gap-40 text-nowrap">
         {@render children()}
       </div>
     </div>

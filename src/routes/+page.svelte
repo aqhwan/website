@@ -1,13 +1,12 @@
 <script
-  lang="ts"
->
+  lang="ts">
   import Hero from './Hero.svelte'
-
-  import type { Attachment } from 'svelte/attachments'
   import Features from './Features.svelte'
-
-  import { blurs } from '$lib/states/bgBlur.svelte'
   import Contact from './Contact.svelte'
+
+  import type {Attachment} from 'svelte/attachments'
+
+  import {blurs} from '$lib/states/bgBlur.svelte'
 
   const chnageBgBlur: Attachment =
     () => {
@@ -88,12 +87,9 @@
 
 <span
   style:display="none"
-  {@attach chnageBgBlur}
->
+  {@attach chnageBgBlur}>
 </span>
-<Hero
-/>
-<Features
-/>
-<Contact
-/>
+
+<Hero />
+<Features />
+<Contact />

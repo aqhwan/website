@@ -1,6 +1,5 @@
 <script
-  lang="ts"
->
+  lang="ts">
   import Icon from './Icon.svelte'
 
   let {
@@ -14,15 +13,13 @@
 </script>
 
 <span
-  class={style}
->
+  class={style}>
   <Icon
     icon="listDot.svg"
     size={{
       h: 1,
       w: 1,
-    }}
-  />
+    }} />
 
   {@render children()}
 </span>
