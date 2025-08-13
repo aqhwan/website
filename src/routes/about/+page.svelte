@@ -1,53 +1,100 @@
-<script>
+<script
+  lang="ts">
   import {_} from 'svelte-i18n'
-  const content =
-    [
-      'contact',
-      'team',
-      'faq',
-      'privacy',
-    ]
+
+  const t: any =
+    _
+
+  import type {Attachment} from 'svelte/attachments'
+
+  import {blurs} from '$lib/states/bgBlur.svelte'
+
+  const chnageBgBlur: Attachment =
+    () => {
+      $blurs =
+        [
+          {
+            position:
+              {
+                top: 10,
+                left: 70,
+              },
+            time: 60,
+            size: {
+              height: 30,
+              width: 30,
+            },
+            color:
+              '--color-helper-green',
+            animation:
+              'down-up',
+          },
+          {
+            position:
+              {
+                top: 80,
+                left: -20,
+              },
+            time: 20,
+            size: {
+              height: 40,
+              width: 40,
+            },
+            color:
+              '--color-helper-purple',
+            animation:
+              'up-down',
+          },
+        ]
+
+      return () => {
+        $blurs =
+          []
+      }
+    }
 </script>
 
-<header
-  class="flex min-h-screen flex-col p-8">
+<section
+  id="about-container"
+  class="flex min-h-screen w-full flex-col"
+  {@attach chnageBgBlur}>
   <section
-    class="flex flex-col items-center justify-center gap-4 p-8 md:flex-row-reverse">
-    <div>
+    id="about-header"
+    class="relative mt-10 flex flex-col items-center justify-center gap-4 md:flex-row-reverse">
+    <div
+      class="w-1/2">
       <img
-        src="./static/icons/arrowDown.svg"
+        src="/images/logo/subLogo.svg"
         alt="logo"
-        class="h-32 w-32" />
+        class="w-full" />
     </div>
-    <div>
+    <div
+      class="w-1/2">
       <p>
         <strong
           class="inline"
           >{$_(
-            `about.title`,
+            `about.header.title`,
           )}</strong
         >{$_(
-          'about.description',
+          'about.header.body',
         )}
       </p>
     </div>
   </section>
   <section
     class="flex flex-col gap-4">
-    <div>
-      {#each content as item}
+    {#each $t('about.sections') as section}
+      <div>
+        <h2
+          class="inline">
+          {section.title}
+        </h2>
         <p
-          class="gap-4 p-8">
-          <strong
-            class="inline"
-            >{$_(
-              `${item}.title`,
-            )}</strong
-          >{$_(
-            `${item}.description`,
-          )}
+          class="inline">
+          {section.body}
         </p>
-      {/each}
-    </div>
+      </div>
+    {/each}
   </section>
-</header>
+</section>
