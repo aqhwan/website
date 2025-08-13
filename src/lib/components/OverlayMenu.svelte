@@ -55,19 +55,16 @@
   onkeydown={handleKeydown} />
 
 {#if show}
-  <!-- Portal to body to ensure it's always relative to viewport -->
   <div
     class="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
     onclick={handleBackdropClick}
     onkeydown={handleBackdropKeydown}
     role="presentation"
     tabindex="-1">
-    <!-- Simplified transparent menu container -->
     <div
       class="flex max-h-[80vh] w-full max-w-sm flex-col gap-2 overflow-y-auto"
       role="dialog"
       tabindex="0">
-      <!-- Simple menu items with transparent background -->
       {#each items as item}
         <button
           onclick={() =>

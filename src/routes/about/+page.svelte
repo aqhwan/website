@@ -56,20 +56,20 @@
 
 <section
   id="about-container"
-  class="flex min-h-screen w-full flex-col"
+  class="mb-40 flex min-h-screen w-full flex-col"
   {@attach chnageBgBlur}>
   <section
     id="about-header"
     class="relative mt-10 flex flex-col items-center justify-center gap-4 md:flex-row-reverse">
     <div
-      class="w-1/2">
+      class="not-md:w-full md:w-1/2">
       <img
         src="/images/logo/subLogo.svg"
         alt="logo"
         class="w-full" />
     </div>
     <div
-      class="w-1/2">
+      class="not-md:w-full md:w-1/2">
       <p>
         <strong
           class="inline"

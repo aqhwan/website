@@ -40,7 +40,7 @@
             transform:
               [
                 'none',
-                `translateX(-${node.children[0].children.length + 1}00vw)`,
+                `translateX(-${node.children[0].children.length}00vw)`,
               ],
           },
         ),
@@ -58,7 +58,7 @@
 
 <div
   id="horizontal-scroll-gallery"
-  class="relative w-full {style}">
+  class="relative w-full {style} mt-40 not-md:mt-20">
   <div
     class="relative! h-full">
     <div

@@ -1,5 +1,6 @@
 <script
   lang="ts">
+  import A from '$lib/components/A.svelte'
   import Hr from '$lib/components/Hr.svelte'
 
   import {_} from 'svelte-i18n'
@@ -69,20 +70,20 @@
 
   <section
     id="footer-copyright-and-notes"
-    class="flex h-fit w-full items-center py-10 not-md:flex-col not-md:justify-center not-md:gap-3 md:flex-row md:justify-between">
+    class="flex h-fit w-full items-center py-10 text-center not-md:flex-col not-md:justify-center not-md:gap-3 md:flex-row md:justify-between">
     <small
       >{$_(
         'footer.copyright_and_notes.copyright',
       )}</small>
     <small>
-      <a
+      <A
         href={$_(
           'footer.copyright_and_notes.site_notes.size_source_link',
         )}>
         {$_(
           'footer.copyright_and_notes.site_notes.note',
         )}
-      </a>
+      </A>
     </small>
   </section>
 </footer>

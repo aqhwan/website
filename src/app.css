@@ -33,3 +33,7 @@ sub {
 small {
   @apply sub-font-s inline-block;
 }
+
+desc {
+  @apply main-font-s text-helper-gray!;
+}

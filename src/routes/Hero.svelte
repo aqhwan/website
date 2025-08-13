@@ -1,6 +1,7 @@
 <script
   lang="ts">
   import Icon from '$lib/components/Icon.svelte'
+  import LocalAndThemeSwitchers from '$lib/components/LocalAndThemeSwitchers.svelte'
   import WordRotate from '$lib/components/WordRotate.svelte'
 
   import {_} from 'svelte-i18n'
@@ -55,7 +56,7 @@
   </figure>
 
   <span
-    class="animate-fast-down-up-1 my-10">
+    class="animate-fast-down-up-1 relative mt-10 flex w-full items-center justify-center">
     <small>
       {$_(
         'home.hero.note.scroll_down',
@@ -68,5 +69,8 @@
         }}
         style="animate-bounce" />
     </small>
+
+    <LocalAndThemeSwitchers
+      style="not-md:hidden absolute inset-0 h-full traslate-[-50%]" />
   </span>
 </main>

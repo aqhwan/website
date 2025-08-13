@@ -13,6 +13,8 @@
 
   let {
     style,
+  }: {
+    style?: string
   } =
     $props()
 

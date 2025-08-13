@@ -17,6 +17,8 @@
     --color-yellow-1
   );
   --color-helper-purple: #e1e1feff;
+
+  --color-helper-gray: #999999; /* small light text */
 }
 
 @utility pallet-font {
@@ -36,11 +38,15 @@
 }
 
 @utility pallet-highlight-bg {
-  @apply bg-yellow-1 dark:bg-gray-2;
+  @apply bg-white-2 dark:bg-gray-2;
 }
 
 @utility pallet-colored-font {
   @apply text-green-2 dark:text-green-3;
+}
+
+@utility pallet-colored-bg {
+  @apply bg-green-2 dark:bg-green-3;
 }
 
 @utility pallet-blur-* {
