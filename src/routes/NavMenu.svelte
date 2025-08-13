@@ -1,6 +1,7 @@
 <script
   lang="ts">
   import Icon from '$lib/components/Icon.svelte'
+  import OverlayMenu from '$lib/components/OverlayMenu.svelte'
 
   let menu =
     // FIXME: use local
@@ -8,7 +9,47 @@
       'products',
       'about',
     ]
+
+  let selectedValue: string =
+    $state(
+      '',
+    )
+
+  let show: boolean =
+    $state(
+      false,
+    )
+
+  $effect(
+    () => {
+      if (
+        selectedValue
+      ) {
+        if (
+          selectedValue
+          === 'home'
+        ) {
+          selectedValue =
+            ''
+        }
+
+        window.location.href =
+          window
+            .location
+            .origin
+          + `/${selectedValue}`
+      }
+    },
+  )
 </script>
+
+<OverlayMenu
+  items={[
+    'home',
+    ...menu,
+  ]}
+  bind:selectedValue
+  bind:show />
 
 <div
   id="menu-container z-1">
@@ -25,7 +66,11 @@
   <div
     id="mobile"
     class="sm:hidden">
-    <button>
+    <button
+      onclick={() => {
+        show = true
+      }}
+      class="cursor-pointer">
       <Icon
         icon={'menu.svg'}
         size={{

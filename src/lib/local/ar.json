@@ -1,5 +1,78 @@
 {
-  "test": {
-    "hello": "مرحبا كيف حالك"
+  "home": {
+    "hero": {
+      "title": {
+        "we_do": "hey this should be in arabic",
+        "highlight": "but",
+        "our_apps_are": "our apps are",
+        "features": [
+          "private",
+          "beautiful",
+          "fast",
+          "easy",
+          "fun"
+        ]
+      },
+
+      "note": {
+        "scroll_down": "there is some thign down"
+      }
+    },
+
+    "features": {
+      "title": "owr apps are",
+
+      "left": {
+        "title": {
+          "first_part": "we do",
+          "highlight": "not"
+        },
+
+        "features_list": [
+          "buy u the markting",
+          "buy u the markting",
+          "buy u the markting",
+          "buy u the markting",
+          "buy u the markting"
+        ],
+
+        "clean_app": "clean app"
+      },
+
+      "right": {
+        "features_list": [
+          {
+            "body": "this is some text that tallk about a featcher in this app makers",
+            "direction": "left",
+            "image": "/images/lock.svg"
+          },
+          {
+            "body": "this is some text that tallk about a featcher in this app makers",
+            "direction": "right",
+            "image": "/images/valueEqualMonay.svg"
+          },
+          {
+            "body": "this is some text that tallk about a featcher in this app makers",
+            "direction": "left",
+            "image": "/images/glass.svg"
+          }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Contact us?",
+      "email": "some@mail.thing",
+      "discord": "discord.gg/acountNoExistYet",
+      "telegram": "t.me/acountNoExistYet"
+    }
+  },
+  "footer": {
+    "copyright_and_notes": {
+      "copyright": "Copyright ©2025 Aqhwan",
+      "site_notes": {
+        "note": "made and design by a aqhwan member, open source at aqhwan/website",
+        "size_source_link": "https://github.com/aqhwan/website"
+      }
+    }
   }
 }

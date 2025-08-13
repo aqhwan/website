@@ -77,7 +77,7 @@
               2,
             ),
           }}
-          style="absolute right-[0%]" />
+          style="absolute right-[0%] animate-pulse" />
       </span>
       <strong
         class="text-center text-wrap">
