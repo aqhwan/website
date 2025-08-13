@@ -9,7 +9,7 @@
 
 <main
   id="hero"
-  class="relative flex h-screen w-full flex-col items-center justify-center">
+  class="relative flex h-full w-full flex-col items-center justify-center">
   <figure
     class="flex w-full flex-col items-center justify-end text-center md:flex-row md:justify-between">
     <div

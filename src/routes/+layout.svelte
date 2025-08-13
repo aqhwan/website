@@ -12,7 +12,7 @@
   lang="ts">
   import '../app.css'
 
-  import Nav from './Nav.svelte'
+  import Nav from './Something.svelte'
   import Footer from './Footer.svelte'
   import BgBlur from '$lib/components/BgBlur.svelte'
 
