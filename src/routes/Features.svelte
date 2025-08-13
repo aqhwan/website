@@ -123,7 +123,7 @@
             >{index
               + 1}</mark>
           <span
-            class="h-full overflow-scroll">
+            class="h-full overflow-hidden">
             {body}
           </span>
         </span>
