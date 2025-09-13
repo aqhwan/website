@@ -2,6 +2,7 @@
   lang="ts">
   import A from '$lib/components/A.svelte'
   import Hr from '$lib/components/Hr.svelte'
+  import ThemedImg from '$lib/components/ThemedImg.svelte'
 
   import {_} from 'svelte-i18n'
 
@@ -47,10 +48,10 @@
       {/each}
     </ul>
 
-    <img
-      src="/images/logo/bothBlackAndWhiteFill.svg"
+    <ThemedImg
+      name="logoBothWhiteFill.svg"
       alt="footer logo"
-      class="object-cover not-md:order-3 not-lg:max-h-100 md:order-2" />
+      style="object-cover not-md:order-3 not-lg:max-h-100 md:order-2" />
 
     <ul
       id="footer-pages-links"

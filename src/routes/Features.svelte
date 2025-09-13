@@ -3,6 +3,7 @@
   import FullScreenTitleFly from '$lib/components/FullScreenTitleFly.svelte'
   import Icon from '$lib/components/Icon.svelte'
   import Li from '$lib/components/Li.svelte'
+  import ThemedImg from '$lib/components/ThemedImg.svelte'
 
   import rp from '$lib/utils/responsivePass.svelte'
 
@@ -127,10 +128,10 @@
             {body}
           </span>
         </span>
-        <img
-          src={image}
+        <ThemedImg
+          name={image}
           alt=""
-          class="mx-2 w-auto max-w-1/3" />
+          style="mx-2 w-auto max-w-1/3" />
       </div>
     {/each}
   </div>

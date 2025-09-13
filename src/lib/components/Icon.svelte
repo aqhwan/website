@@ -1,5 +1,25 @@
 <script
   lang="ts">
+  import {theme} from '$lib/states/theme.svelte'
+
+  let dirName =
+    $state(
+      $theme
+        == 'light'
+        ? 'dark'
+        : 'light',
+    )
+
+  $effect(
+    () => {
+      dirName =
+        $theme
+        == 'light'
+          ? 'dark'
+          : 'light'
+    },
+  )
+
   let {
     icon,
     size,
@@ -17,6 +37,8 @@
 
 <img
   src={'/icons/'
+    + dirName
+    + '/'
     + icon}
   alt="logo"
   class="inline-block {style}"

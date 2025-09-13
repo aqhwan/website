@@ -6,6 +6,9 @@
 
   import {_} from 'svelte-i18n'
 
+  import {theme} from '$lib/states/theme.svelte'
+  import ThemedImg from '$lib/components/ThemedImg.svelte'
+
   let filters =
     $state(
       '',
@@ -51,9 +54,8 @@
       class="z-1 flex h-full w-50 items-center justify-center not-sm:hidden">
       <a
         href="/">
-        <img
-          class="fill-gray-1 stroke-gray-1 dark:stroke-yellow-1 dark:fill-yellow-1"
-          src="/images/logo/bothBlackAndWhite.svg"
+        <ThemedImg
+          name="logoBothFlowers.svg"
           alt="logo" />
       </a>
     </div>

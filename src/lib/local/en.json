@@ -44,17 +44,17 @@
           {
             "body": "this is some text that tallk about a featcher in this app makers",
             "direction": "left",
-            "image": "/images/lock.svg"
+            "image": "lock.svg"
           },
           {
             "body": "this is some text that tallk about a featcher in this app makers",
             "direction": "right",
-            "image": "/images/valueEqualMonay.svg"
+            "image": "valueEqualMonay.svg"
           },
           {
             "body": "this is some text that tallk about a featcher in this app makers",
             "direction": "left",
-            "image": "/images/glass.svg"
+            "image": "glass.svg"
           }
         ]
       }

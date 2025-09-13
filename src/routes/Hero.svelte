@@ -2,6 +2,7 @@
   lang="ts">
   import Icon from '$lib/components/Icon.svelte'
   import LocalAndThemeSwitchers from '$lib/components/LocalAndThemeSwitchers.svelte'
+  import ThemedImg from '$lib/components/ThemedImg.svelte'
   import WordRotate from '$lib/components/WordRotate.svelte'
 
   import {_} from 'svelte-i18n'
@@ -15,10 +16,9 @@
     <div
       id="left"
       class="not-sm:w-full sm:w-1/2">
-      <img
-        src="/images/logo/both.png"
+      <ThemedImg
+        name="mainLogo.svg"
         alt="logo" />
-      <!-- FIXME: use svg -->
     </div>
     <div
       id="right"

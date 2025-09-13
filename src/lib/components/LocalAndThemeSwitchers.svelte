@@ -4,6 +4,7 @@
   import OverlayMenu from './OverlayMenu.svelte'
 
   import {locale} from 'svelte-i18n'
+  import {theme} from '$lib/states/theme.svelte'
 
   const SUPPORTED_LANGUAGES =
     [
@@ -42,9 +43,6 @@
 
   let body: HTMLBodyElement
 
-  let theme =
-    'light'
-
   const changeLanguage =
     () => {
       items =
@@ -61,21 +59,21 @@
 
   const changeTheme =
     () => {
-      theme =
-        theme
+      $theme =
+        $theme
         === 'light'
           ? 'dark'
           : 'light'
 
       body.classList.toggle(
         'dark',
-        theme
+        $theme
           === 'dark',
       )
 
       body.classList.toggle(
         'light',
-        theme
+        $theme
           === 'light',
       )
     }
