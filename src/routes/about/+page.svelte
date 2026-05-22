@@ -8,6 +8,7 @@
   import type {Attachment} from 'svelte/attachments'
 
   import {blurs} from '$lib/states/bgBlur.svelte'
+  import ThemedImg from '$lib/components/ThemedImg.svelte'
 
   const chnageBgBlur: Attachment =
     () => {
@@ -63,10 +64,10 @@
     class="relative mt-10 flex flex-col items-center justify-center gap-4 md:flex-row-reverse">
     <div
       class="not-md:w-full md:w-1/2">
-      <img
-        src="/images/logo/subLogo.svg"
+      <ThemedImg
+        name="subLogo.svg"
         alt="logo"
-        class="w-full" />
+        style="w-full" />
     </div>
     <div
       class="not-md:w-full md:w-1/2">

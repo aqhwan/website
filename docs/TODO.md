@@ -7,14 +7,14 @@
 - [ ] home
   - [x] navbar
   - [x] hero
-  - [ ] features
-  - [ ] footer
-- [ ] about
-  - [ ] header
-  - [ ] main
-- [ ] products
-  - [ ] product card
-  - [ ] cam soon cards
-  - [ ] product layout
+  - [x] features
+  - [x] footer
+- [x] about
+  - [x] header
+  - [x] main
+- [x] products
+  - [x] product card
+  - [x] cam soon cards
+  - [x] product layout
 
 - [ ] deploy it

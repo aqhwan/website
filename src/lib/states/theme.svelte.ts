@@ -3,4 +3,7 @@ import {
   type Writable,
 } from 'svelte/store'
 
-export let theme: Writable<string> = writable('light');
+export let theme: Writable<string> =
+  writable(
+    'light',
+  )
