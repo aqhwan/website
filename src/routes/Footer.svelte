@@ -85,6 +85,13 @@
           'footer.copyright_and_notes.site_notes.note',
         )}
       </A>
+      ,
+      <A
+        newTab={false}
+        href={ "/license" }
+        >
+        librarys open source license
+      </A>
     </small>
   </section>
 </footer>

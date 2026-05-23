@@ -5,6 +5,13 @@ import {defineConfig} from 'vite'
 
 export default defineConfig(
   {
+    server: {
+      fs: {
+        allow: [
+          '..', // allows one level above root — adjust as needed
+        ],
+      },
+    },
     plugins:
       [
         tailwindcss(),

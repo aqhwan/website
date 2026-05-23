@@ -4,10 +4,12 @@
 
   let {
     href,
+    newTab = true,
     attributes,
     children,
   }: {
     href: string
+    newTab?: boolean
     attributes?: any
     children?: any
   } =
@@ -15,6 +17,7 @@
 </script>
 
 <a
+  target={newTab ? '_blank' : undefined}
   {...attributes}
   {href}>
   {@render children()}
