@@ -12,12 +12,13 @@
     newTab?: boolean
     attributes?: any
     children?: any
-  } =
-    $props()
+  } = $props()
 </script>
 
 <a
-  target={newTab ? '_blank' : undefined}
+  target={newTab
+    ? '_blank'
+    : undefined}
   {...attributes}
   {href}>
   {@render children()}

@@ -88,9 +88,11 @@
       ,
       <A
         newTab={false}
-        href={ "/license" }
-        >
-        librarys open source license
+        href={'/license'}>
+        librarys
+        open
+        source
+        license
       </A>
     </small>
   </section>
