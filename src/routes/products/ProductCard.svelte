@@ -31,7 +31,7 @@
       class="relative flex h-[55%] w-[50%] items-center justify-center rounded-3xl p-2"
       style="background-color: var(--color-helper-green);">
       <img
-        src="/images/products/{image}"
+        src={image}
         alt={title
           + 'Logo'}
         class="h-full w-full rounded-2xl object-contain" />

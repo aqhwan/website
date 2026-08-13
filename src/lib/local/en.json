@@ -2,57 +2,51 @@
   "home": {
     "hero": {
       "title": {
-        "we_do": "we make apps",
+        "we_do": "We make apps",
         "highlight": "but",
         "our_apps_are": "our apps are",
         "features": [
-          "private",
-          "beautiful",
-          "fast",
-          "easy",
-          "fun"
+          "Private",
+          "Beautiful",
+          "Fast",
+          "Easy",
+          "Fun"
         ]
       },
-
       "note": {
-        "scroll_down": "there is some thign down"
+        "scroll_down": "There's something cool waiting below!"
       }
     },
-
     "features": {
-      "title": "owr apps are",
-
+      "title": "Why we are different",
       "left": {
         "title": {
-          "first_part": "we do",
-          "highlight": "not"
+          "first_part": "We do",
+          "highlight": "NOT"
         },
-
         "features_list": [
-          "buy u the markting",
-          "buy u the markting",
-          "buy u the markting",
-          "buy u the markting",
-          "buy u the markting"
+          "Buy you marketing tricks",
+          "Sell your data",
+          "Buy your data",
+          "Spy on you",
+          "Bloat our apps with gimmicks"
         ],
-
-        "clean_app": "clean app"
+        "clean_app": "Just a clean, honest app."
       },
-
       "right": {
         "features_list": [
           {
-            "body": "this is some text that tallk about a featcher in this app makers",
+            "body": "We never build spyware. Your data stays yours—we prioritize local solutions that work offline whenever possible.",
             "direction": "left",
             "image": "lock.svg"
           },
           {
-            "body": "this is some text that tallk about a featcher in this app makers",
+            "body": "Never selling marketing. We build apps that solve real problems, not flashy gimmicks.",
             "direction": "right",
             "image": "valueEqualMonay.svg"
           },
           {
-            "body": "this is some text that tallk about a featcher in this app makers",
+            "body": "Our business model isn't built on selling people's data for profit. We believe in selling real value and earning your trust.",
             "direction": "left",
             "image": "glass.svg"
           }
@@ -60,57 +54,57 @@
       }
     },
     "contact": {
-      "title": "Contact us?",
-      "email": "some@mail.thing",
-      "discord": "discord.gg/acountNoExistYet",
-      "telegram": "t.me/acountNoExistYet"
+      "title": "Let's Chat!",
+      "email": "contact@aqhwan.app",
+      "discord": "discord.gg/aqhwan",
+      "telegram": "t.me/aqhwan_project"
     }
   },
   "footer": {
     "copyright_and_notes": {
-      "copyright": "Copyright ©2025 Aqhwan",
+      "copyright": "© 2026 Aqhwan. All rights reserved.",
       "site_notes": {
-        "note": "made and design by a aqhwan member, open source at aqhwan/website",
+        "note": "Made with ❤️ by the Aqhwan team. Open source at aqhwan/website",
         "size_source_link": "https://github.com/aqhwan/website"
       }
     }
   },
   "about": {
     "header": {
-      "title": "About",
-      "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "About Aqhwan",
+      "body": "Aqhwan is a small, passionate team dedicated to creating useful, high-quality apps with a laser focus on privacy and user respect. We believe technology should empower you, not exploit you."
     },
     "sections": [
       {
-        "title": "Contact",
-        "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "Get in Touch",
+        "body": "Have a question or an idea? Drop us an email at contact@aqhwan.app. For development discussions and community chat, join our Discord server. You'll find all our links below!"
       },
       {
-        "title": "Team",
-        "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "Meet the Team",
+        "body": "We're a small group of developers and designers who care deeply about digital rights. We were tired of apps that treat users like products."
       },
       {
-        "title": "FAQ",
-        "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "Common Questions",
+        "body": "Wondering how we make money? We keep it simple: we build great software and charge fairly for it (or offer free versions with heart). No hidden fees, no data harvesting. Curious about our roadmap? Check out our public GitHub repo or ask us!"
       },
       {
-        "title": "Privacy",
-        "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "Your Privacy Matters",
+        "body": "We take your data seriously. That's why we use end-to-end encryption where possible, store minimal data, and never irresponsibly share your information with third parties for profit, advertising purposes, or exploitation in general. Our privacy policy is written in plain English, not legalese. Read it on https://aqhwan.app/privacy to see exactly how we protect you."
       }
     ]
   },
   "products": [
     {
-      "title": "Product 1",
-      "description": "this is an app that does something",
-      "image": "moka1.svg",
-      "link": "https://example.com",
-      "open_source": true,
+      "title": "Refq",
+      "description": "Your workout's plans, notes, timer, todos and more in one app. privacy focus, works offline no sing-in required",
+      "image": "https://github.com/aqhwan/refq-releases/raw/refs/heads/stable/app-logo.svg",
+      "link": "https://github.com/aqhwan/refq-releases/blob/stable/releases/latest",
+      "open_source": false,
       "price": 0,
       "ready": false,
       "platforms": [
-        "android",
-        "web"
+        "Android",
+        "Ios"
       ]
     }
   ]

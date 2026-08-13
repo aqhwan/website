@@ -2,57 +2,51 @@
   "home": {
     "hero": {
       "title": {
-        "we_do": "hey this text should be in arabic",
-        "highlight": "but",
-        "our_apps_are": "our apps are",
+        "we_do": "نحن نصنع التطبيقات",
+        "highlight": "لكن",
+        "our_apps_are": "تطبيقاتنا",
         "features": [
-          "private",
-          "beautiful",
-          "fast",
-          "easy",
-          "fun"
+          "خاصة",
+          "جميلة",
+          "سريعة",
+          "سهلة",
+          "ممتعة"
         ]
       },
-
       "note": {
-        "scroll_down": "there is some thign down"
+        "scroll_down": "هناك شيء رائع في الأسفل!"
       }
     },
-
     "features": {
-      "title": "owr apps are",
-
+      "title": "لماذا نحن مختلفون؟",
       "left": {
         "title": {
-          "first_part": "we do",
-          "highlight": "not"
+          "first_part": "نحن لا",
+          "highlight": "نقوم ب"
         },
-
         "features_list": [
-          "buy u the markting",
-          "buy u the markting",
-          "buy u the markting",
-          "buy u the markting",
-          "buy u the markting"
+          "نبيع لك حيل التسويق",
+          "نبيع بياناتك",
+          "نشتري بياناتك",
+          "نتجسس عليك",
+          "نثقل تطبيقاتنا بالحشو غير المفيد"
         ],
-
-        "clean_app": "clean app"
+        "clean_app": "فقط تطبيق نظيف وصادق."
       },
-
       "right": {
         "features_list": [
           {
-            "body": "this is some text that tallk about a featcher in this app makers",
+            "body": "لا نبني برمجيات تجسس أبداً. بياناتك تبقى ملكاً لك—نحن نفضل الحلول المحلية التي تعمل دون اتصال بالإنترنت كلما أمكن.",
             "direction": "left",
             "image": "lock.svg"
           },
           {
-            "body": "this is some text that tallk about a featcher in this app makers",
+            "body": "لا نبيعك للمسوقين. نبني تطبيقات تحل مشاكل حقيقية، وليس مجرد حشو جذاب.",
             "direction": "right",
             "image": "valueEqualMonay.svg"
           },
           {
-            "body": "this is some text that tallk about a featcher in this app makers",
+            "body": "نموذج عملنا لا يعتمد على بيع بيانات الناس للربح. نحن نؤمن ببيع قيم حقيقية وكسب ثقتكم.",
             "direction": "left",
             "image": "glass.svg"
           }
@@ -60,43 +54,58 @@
       }
     },
     "contact": {
-      "title": "Contact us?",
-      "email": "some@mail.thing",
-      "discord": "discord.gg/acountNoExistYet",
-      "telegram": "t.me/acountNoExistYet"
+      "title": "دعنا نتحدث!",
+      "email": "contact@aqhwan.app",
+      "discord": "discord.gg/aqhwan",
+      "telegram": "t.me/aqhwan_project"
     }
   },
   "footer": {
     "copyright_and_notes": {
-      "copyright": "Copyright ©2025 Aqhwan",
+      "copyright": "© 2026 أقحوان. جميع الحقوق محفوظة.",
       "site_notes": {
-        "note": "made and design by a aqhwan member, open source at aqhwan/website",
+        "note": "صُنع بحب ❤️ من فريق أقحوان. مفتوح المصدر في aqhwan/website",
         "size_source_link": "https://github.com/aqhwan/website"
       }
     }
   },
   "about": {
     "header": {
-      "title": "About",
-      "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "عن أقبان",
+      "body": "أقحوان هو فريق صغير وشغوف بصنع تطبيقات مفيدة وعالية الجودة مع تركيز شديد على الخصوصية واحترام المستخدم. نحن نؤمن أن التكنولوجيا يجب أن تنقعك، لا أن تستغلك."
     },
     "sections": [
       {
-        "title": "Contact",
-        "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "تواصل معنا",
+        "body": "هل لديك سؤال أو فكرة؟ أرسل لنا بريداً إلكترونياً على contact@aqhwan.app. لمناقشات التطوير والدردشة المجتمعية، انضم إلى سيرفر ديسكورد الخاص بنا. ستجد جميع روابط التواصل أدناه!"
       },
       {
-        "title": "Team",
-        "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "تعرف على الفريق",
+        "body": "نحن مجموعة صغيرة من المطورين والمصممين الذين يهتمون بشكل عميق بالحقوق الرقمية. بدأنا أقبان لأننا تعبنا من التطبيقات التي تعامل المستخدمين كمنتجات. عندما لا نكون نبرمج، فنحن غالباً نمشي في الطبيعة، نقرأ، أو نجرب أدوات خصوصية جديدة."
       },
       {
-        "title": "FAQ",
-        "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "أسئلة شائعة",
+        "body": "هل تتساءل كيف نكسب المال؟ الأمر بسيط: نبني برمجيات رائعة ونطلب سعراً عادلاً لها (أو نقدم نسخاً مجانية بقلب دافئ). لا رسوم خفية، ولا جمع للبيانات. هل تود معرفة خارطة طريقنا؟ تحقق من مستودع GitHub العام أو اسألنا على ديسكورد!"
       },
       {
-        "title": "Privacy",
-        "body": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "title": "خصوصيتك تهمنا",
+        "body": "نحن نأخذ بياناتك بجدية. لهذا نستخدم التشفير من طرف إلى طرف حيثما أمكن، ونخزن الحد الأدنى من البيانات، ولا نشارك معلوماتك أبداً مع أطراف ثالثة. سياسة الخصوصية لدينا مكتوبة بلغة عربية واضحة، وليس بلغة قانونية معقدة. اقرأها هنا لترى بالضبط كيف نحميك."
       }
     ]
-  }
+  },
+  "products": [
+    {
+      "title": "رفق",
+      "description": "تطبيق لتتبع الخطط الرياضية",
+      "image": "https://github.com/aqhwan/refq-releases/raw/refs/heads/stable/app-logo.svg",
+      "link": "https://github.com/aqhwan/refq-releases",
+      "open_source": false,
+      "price": 0,
+      "ready": false,
+      "platforms": [
+        "أندرويد",
+        "ويب"
+      ]
+    }
+  ]
 }
