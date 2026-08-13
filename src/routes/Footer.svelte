@@ -15,11 +15,11 @@
       },
       {
         name: 'telegram',
-        href: 'toPass',
+        href: 'https://t.me/aqhwan',
       },
       {
         name: 'discord',
-        href: 'toPass',
+        href: 'https://discord.gg/GDb3AJ7Ah',
       },
     ]
 
