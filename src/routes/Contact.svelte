@@ -9,21 +9,27 @@
       {
         name: 'email',
         value:
-          $_('home.contact.email'),
+          $_(
+            'home.contact.email',
+          ),
         protocol:
           'mailto:',
       },
       {
         name: 'discord',
         value:
-          $_('home.contact.discord'),
+          $_(
+            'home.contact.discord',
+          ),
         protocol:
           'https://',
       },
       {
         name: 'telegram',
         value:
-          $_('home.contact.telegram'),
+          $_(
+            'home.contact.telegram',
+          ),
         protocol:
           'https://',
       },
