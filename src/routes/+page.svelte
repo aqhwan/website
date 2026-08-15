@@ -83,6 +83,38 @@
           []
       }
     }
+
+  ;(function () {
+    try {
+      var saved =
+        localStorage.getItem(
+          'lang',
+        )
+      var lang =
+        saved
+        || (
+          navigator.language
+          || 'en'
+        ).toLowerCase()
+      var isAr =
+        lang.indexOf(
+          'ar',
+        )
+        === 0
+      document.documentElement.setAttribute(
+        'dir',
+        isAr
+          ? 'rtl'
+          : 'ltr',
+      )
+      document.documentElement.setAttribute(
+        'lang',
+        isAr
+          ? 'ar'
+          : 'en',
+      )
+    } catch (e) {}
+  })()
 </script>
 
 <span

@@ -4,7 +4,6 @@
     animate,
     scroll,
   } from 'motion'
-
   import type {Action} from 'svelte/action'
 
   let {
@@ -20,38 +19,78 @@
     (
       node: HTMLElement,
     ) => {
-      // Set the container height to enable scrolling
       const container =
         node
           .parentElement
           ?.parentElement
-      if (
-        container
-      ) {
-        container.style.height = `${(node.children[0].children.length - 1) * 100}vh`
-      }
+      const track =
+        node
+          .children[0] as HTMLElement
 
-      // Set up the horizontal scroll animation
-      scroll(
-        animate(
-          node
-            .children[0],
-          {
-            transform:
-              [
-                'none',
-                `translateX(-${node.children[0].children.length}00vw)`,
-              ],
-          },
-        ),
+      let stopScroll:
+        | (() => void)
+        | undefined
+
+      const setup =
+        () => {
+          // tear down the previous scroll-linked animation before re-initializing,
+          // otherwise switching language stacks a second competing listener
+          stopScroll?.()
+
+          if (
+            container
+          ) {
+            container.style.height = `${(track.children.length - 1) * 100}vh`
+          }
+
+          const isRtl =
+            document.documentElement.dir.toLowerCase()
+            === 'rtl'
+          const distance = `${track.children.length}00vw`
+
+          stopScroll =
+            scroll(
+              animate(
+                track,
+                {
+                  transform:
+                    [
+                      'none',
+                      `translateX(${isRtl ? '' : '-'}${distance})`,
+                    ],
+                },
+              ),
+              {
+                target:
+                  node.parentElement!,
+              },
+            )
+        }
+
+      setup()
+
+      // dir changes live when the user switches language (no page reload),
+      // so re-run setup() whenever it does
+      const observer =
+        new MutationObserver(
+          setup,
+        )
+      observer.observe(
+        document.documentElement,
         {
-          target:
-            node.parentElement!,
+          attributes: true,
+          attributeFilter:
+            [
+              'dir',
+            ],
         },
       )
 
       return {
-        destroy() {},
+        destroy() {
+          stopScroll?.()
+          observer.disconnect()
+        },
       }
     }
 </script>

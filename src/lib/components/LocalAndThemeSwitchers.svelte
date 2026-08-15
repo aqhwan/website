@@ -98,6 +98,18 @@
           lang,
         )
 
+        document
+          .querySelector(
+            'html',
+          )
+          ?.setAttribute(
+            'dir',
+            lang
+              == 'ar'
+              ? 'rtl'
+              : 'ltr',
+          )
+
         locale.set(
           lang,
         )
