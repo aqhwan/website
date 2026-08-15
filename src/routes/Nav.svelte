@@ -43,9 +43,8 @@
   onscroll={handleScroll} />
 
 <nav
-  style:backdrop-filter={filters}
-  style:-webkit-backdrop-filter={filters}
-  class="sticky inset-0 top-5 z-2 mx-auto h-30 w-full overflow-hidden rounded-[3.4rem] bg-radial-[at_150%_400%] from-white to-transparent transition-all duration-150 ease-in-out not-sm:h-20 before:pointer-events-none before:absolute before:inset-0 before:-z-1 before:rounded-[inherit] dark:from-black">
+  style:--nav-filter={filters}
+  class="sticky inset-0 top-5 z-2 mx-auto h-30 w-full overflow-hidden rounded-[3.4rem] bg-radial-[at_150%_400%] from-white to-transparent not-sm:h-20 before:pointer-events-none before:absolute before:inset-0 before:-z-1 before:rounded-[inherit] dark:from-black">
   <div
     id="nav"
     class="flex h-full w-full items-center justify-between not-sm:px-10 sm:px-20">
@@ -69,37 +68,14 @@
 <style>
   nav::before {
     content: '';
+    backdrop-filter: var(--nav-filter, none);
+    -webkit-backdrop-filter: var(--nav-filter, none);
     -webkit-box-shadow:
-      inset
-        2px
-        2px
-        0px -2px
-        var(
-          --color-white-1
-        ),
-      inset
-        0
-        0
-        3px
-        1px
-        var(
-          --color-white-2
-        );
+      inset 2px 2px 0px -2px var(--color-white-1),
+      inset 0 0 3px 1px var(--color-white-2);
     box-shadow:
-      inset
-        6px
-        6px
-        0px -6px
-        var(
-          --color-white-1
-        ),
-      inset
-        0
-        0
-        8px
-        1px
-        var(
-          --color-white-2
-        );
+      inset 6px 6px 0px -6px var(--color-white-1),
+      inset 0 0 8px 1px var(--color-white-2);
+    transition: backdrop-filter 150ms ease-in-out, -webkit-backdrop-filter 150ms ease-in-out;
   }
 </style>
