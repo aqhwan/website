@@ -28,7 +28,7 @@
   <div
     class="flex flex-1 flex-col items-center justify-center gap-6">
     <div
-      class="relative flex h-[55%] w-[50%] items-center justify-center rounded-3xl p-2"
+      class="relative flex h-[55%] w-[80%] sm:w-[50%] items-center justify-center rounded-3xl p-2"
       style="background-color: var(--color-helper-green);">
       <img
         src={image}
