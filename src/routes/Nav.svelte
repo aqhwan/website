@@ -68,14 +68,52 @@
 <style>
   nav::before {
     content: '';
-    backdrop-filter: var(--nav-filter, none);
-    -webkit-backdrop-filter: var(--nav-filter, none);
+    backdrop-filter: var(
+      --nav-filter,
+      none
+    );
+    -webkit-backdrop-filter: var(
+      --nav-filter,
+      none
+    );
     -webkit-box-shadow:
-      inset 2px 2px 0px -2px var(--color-white-1),
-      inset 0 0 3px 1px var(--color-white-2);
+      inset
+        2px
+        2px
+        0px -2px
+        var(
+          --color-white-1
+        ),
+      inset
+        0
+        0
+        3px
+        1px
+        var(
+          --color-white-2
+        );
     box-shadow:
-      inset 6px 6px 0px -6px var(--color-white-1),
-      inset 0 0 8px 1px var(--color-white-2);
-    transition: backdrop-filter 150ms ease-in-out, -webkit-backdrop-filter 150ms ease-in-out;
+      inset
+        6px
+        6px
+        0px -6px
+        var(
+          --color-white-1
+        ),
+      inset
+        0
+        0
+        8px
+        1px
+        var(
+          --color-white-2
+        );
+    transition:
+      backdrop-filter
+        150ms
+        ease-in-out,
+      -webkit-backdrop-filter
+        150ms
+        ease-in-out;
   }
 </style>
