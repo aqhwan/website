@@ -2,9 +2,9 @@
   lang="ts">
   import Icon from '$lib/components/Icon.svelte'
   import OverlayMenu from '$lib/components/OverlayMenu.svelte'
+  import {_} from 'svelte-i18n'
 
   let menu =
-    // FIXME: use local
     [
       'products',
       'about',
@@ -56,10 +56,14 @@
   <div
     id="desctop"
     class="flex h-full items-center justify-around gap-10 not-sm:hidden">
-    {#each menu as item}
+    {#each menu as item, index}
       <a
         href="/{item}">
-        {item}
+        {$_(
+          'home.nav',
+        )[
+          index
+        ]}
       </a>
     {/each}
   </div>

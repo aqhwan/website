@@ -1,5 +1,9 @@
 {
   "home": {
+    "nav": [
+      "products",
+      "about"
+    ],
     "hero": {
       "title": {
         "we_do": "We make apps",

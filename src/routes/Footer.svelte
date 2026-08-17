@@ -6,7 +6,6 @@
 
   import {_} from 'svelte-i18n'
 
-  // TODO: add the links
   const socialMediaLinks =
     [
       {
@@ -25,8 +24,8 @@
 
   const websitePages =
     [
-      'about',
       'products',
+      'about',
     ]
 </script>
 
@@ -56,12 +55,16 @@
     <ul
       id="footer-pages-links"
       class="flex flex-col flex-wrap items-center gap-4 not-md:order-2 md:order-3">
-      {#each websitePages as page}
+      {#each websitePages as page, index}
         <li
           id="footer-page-link-{page}">
           <a
             href="/{page}"
-            >{page}</a>
+            >{$_(
+              'home.nav',
+            )[
+              index
+            ]}</a>
         </li>
       {/each}
     </ul>
