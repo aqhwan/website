@@ -28,6 +28,7 @@
 </script>
 
 <main
+  style:direction="ltr"
   class="mt-10 mb-10">
   <h2>
     {toTitleCase(

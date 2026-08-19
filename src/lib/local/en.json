@@ -97,8 +97,12 @@
       }
     ]
   },
+  "privacy": {
+    "title": "Products Privacy Police:"
+  },
   "products": [
     {
+      "id": "refq",
       "title": "Refq",
       "description": "Your workout's plans, notes, timer, todos and more in one app. privacy focus, works offline no sing-in required",
       "image": "https://github.com/aqhwan/refq-releases/raw/refs/heads/stable/app-logo.svg",

@@ -6,9 +6,9 @@
 <main
   class="mt-10 mb-10 h-auto overflow-hidden">
   <h2>
-    Products
-    Privacy
-    Police:
+    {$_(
+      'privacy.title',
+    )}
   </h2>
   <ul>
     {#each $_('products') as product}
@@ -16,16 +16,10 @@
         class="ellipsis w-full truncate text-nowrap text-ellipsis">
         <A
           href={'/privacy/'
-            + product.title.toLowerCase()}>
+            + product.id.toLowerCase()}>
           {product.title}
           -
           {product.description}
-          -
-          this
-          si
-          even
-          more
-          text
         </A>
       </li>
     {/each}

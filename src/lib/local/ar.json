@@ -97,8 +97,12 @@
       }
     ]
   },
+  "privacy": {
+    "title": "سياسة الخصوصية للمنتجات:"
+  },
   "products": [
     {
+      "id": "refq",
       "title": "رفق",
       "description": "خطط تمارينك، ملاحظاتك، المؤقّت، مهامك، والمزيد في تطبيق واحد. يركّز على الخصوصية، يعمل بدون اتصال بالإنترنت، ولا يتطلب تسجيل دخول.",
       "image": "https://github.com/aqhwan/refq-releases/raw/refs/heads/stable/app-logo.svg",
