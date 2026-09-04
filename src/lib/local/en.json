@@ -104,12 +104,12 @@
     {
       "id": "refq",
       "title": "Refq",
-      "description": "Your workout's plans, notes, timer, todos and more in one app. privacy focus, works offline no sing-in required",
+      "description": "A minimal fitness planner for people who just want to train. No ads, no tracking. Add your workouts, build your plans, and let Refq handle the rest insha'Allah.",
       "image": "https://github.com/aqhwan/refq-releases/raw/refs/heads/stable/app-logo.svg",
-      "link": "https://github.com/aqhwan/refq-releases/blob/stable/releases/latest",
+      "link": "https://github.com/aqhwan/refq-releases/releases/latest",
       "open_source": false,
       "price": 0,
-      "ready": false,
+      "ready": true,
       "platforms": [
         "Android",
         "Ios"

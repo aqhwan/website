@@ -104,12 +104,12 @@
     {
       "id": "refq",
       "title": "رفق",
-      "description": "خطط تمارينك، ملاحظاتك، المؤقّت، مهامك، والمزيد في تطبيق واحد. يركّز على الخصوصية، يعمل بدون اتصال بالإنترنت، ولا يتطلب تسجيل دخول.",
+      "description": "تطبيق لياقة بسيط لمن يريد التمرين فقط. بدون إعلانات، بدون تتبع. أضف تمارينك، ابنِ خططك، ودع رفق يتكفل بالباقي إن شاء الله.",
       "image": "https://github.com/aqhwan/refq-releases/raw/refs/heads/stable/app-logo.svg",
-      "link": "https://github.com/aqhwan/refq-releases/blob/stable/releases/latest",
+      "link": "https://github.com/aqhwan/refq-releases/releases/latest",
       "open_source": false,
       "price": 0,
-      "ready": false,
+      "ready": true,
       "platforms": [
         "Android",
         "Ios"
